@@ -20,3 +20,14 @@ The ability to cause one point of damage to another character when a successful 
 In order to slay my foes with vengeance
 A Character should have
 the ability to cause double damage to another character when they roll a natural 20
+
+###Feature: Character has Abilities and Attributed
+In order to be different from other characters
+A Character should have
+Ability scores for Strength, Dexterity, Constitution, Wisdom, Intelligence and Charisma that range from 1 to 20
+And provide a modifier based on the following table
+
+  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
+ -5  | -4  | -4  | -3  | -3  | -2  | -2  | -1  | -1  |  0   |  0   |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
+
+
