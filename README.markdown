@@ -15,3 +15,8 @@ When the roll of a 20-sided die is greater than or equal to the other character'
 In order to vanquish my foes
 A Character should have
 The ability to cause one point of damage to another character when a successful attack is made
+
+###Feature: Character can make Critical Hits
+In order to slay my foes with vengeance
+A Character should have
+the ability to cause double damage to another character when they roll a natural 20
