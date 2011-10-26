@@ -14,4 +14,4 @@ A base Armor class of 10
 In order to initiate combat
 A Character should have
 The ability to hit another character
-When the roll of a 20-sided die is greater than the other character's armor class
+When the roll of a 20-sided die is greater than or equal to the other character's armor class
