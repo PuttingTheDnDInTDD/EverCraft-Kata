@@ -1,0 +1,39 @@
+Intro - 30
+	Who we are
+	What we're here for
+	What we expect - Intro to TDD - What it is, pairing, etc.
+	Let's pair! - Determine pairs by tech & experience
+	
+Iteration 1 - Basics - 90
+	Code - 75
+	Retro - 15
+
+Iteration 2 - Races, Classes and Levels - 105
+	IPM - 15
+	Code - 75
+	Retro - 15
+
+LUNCH! NOM NOM NOM!
+
+After Lunch Level Set - 15
+
+Iteration 3 - Weapons & Armor - 105
+	IPM - 15
+	Code - 75
+	Retro - 15
+
+Iteration 4 - Magic! - 105
+	IPM - 15
+	Code - 75
+	Retro - 15
+
+Wrap-up - 15
+
+Action Items:
+	- Base project setup for common languages
+	- Contact Jon Kruger about curriculum
+	- Build Slide Deck
+	- Card Backlog - How to
+	- Send in Room Needs: Whiteboards, easels w/pads, Large Index Cards, Tape
+	- Schedule meeting to Redefine cards ETC - 11/11/11
+	- Schedule Dry-Run for December
