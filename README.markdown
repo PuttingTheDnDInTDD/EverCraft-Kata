@@ -28,7 +28,7 @@ As a character I want to have several abilities so that I am not identical to ot
    -5  | -4  | -4  | -3  | -3  | -2  | -2  | -1  | -1  |  0   |  0   |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
  - Abilities are Strength, Dexterity, Constitution, Wisdom, Intelligence, Charisma
 
-###Feature: Character Abilities Scores have Modifier that improve Attributes
+###Feature: Character Ability Modifiers Modify Attributes
 As a character I want to apply my ability modifiers improve my capabilites in combat so that I can vanquish my enemy with extreme prejudice
  - add Strength modifier to:
 	- attack roll
