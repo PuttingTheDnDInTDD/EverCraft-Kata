@@ -11,7 +11,7 @@
 
 ###Feature: Character can be Damaged
  - If attack is successful, other character takes 1 point of damage when hit
- - If a roll of 20 is made, damage is doubled
+ - If a natural roll of 20 is made, damage is doubled
 
 ###Feature: Character has Abilities and Attributes
  - Abilities:
@@ -37,11 +37,13 @@
  -5  | -4  | -4  | -3  | -3  | -2  | -2  | -1  | -1  |  0   |  0   |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
 
 ##Iteration 2 - Classes, Races, & Levels
-###Feature: A Character has a level
+###Feature: A Character has a Level
  - Level defaults to 1
  - For each level:
 	- hit points increase by 5
-	- A roll modifier of 1 is added for every level achieved
+ - For every odd level:
+	- rolls are increased by 1
 
 ###Feature: A Character can gain experience when attacking
  - When a successful attack occurs, the character 
+
