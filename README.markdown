@@ -136,7 +136,31 @@ As a character I want to be able to wield weapons so that I can achieve victory 
   - basic weapons that improve damage (dagger)
   - basic weapons that improve to attacks (+1 sword)
   - magic weapons with special properties (knife of ogre slaying)
-  - weapons that only certain classes or races can or cannot wield
+  - weapons that certain classes or races can or cannot wield
+
+####Samples
+As a character I want to be able to wield a sword so that I can look cool
+
+- does 5 points of damage
+
+As a character I want to be able to wield a magic axe that so that I can *be* cool
+
+- does 6 points of damage
+- +2 to attack
+- +2 to damage
+- triple damage on a critical
+
+As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the magic axe
+
+- does 6 points of damage
+- +1 to attack and damage
+- +2 to attack and damage when wielded by an elf *or* against an orc
+- +5 to attack and damage when wielded by an elf *and* against orc
+
+As a monk I want nun checku that work with my martial arts so that I can kick shaolin style
+
+- does 6 points of damage
+- when used by a non-monk there is a -4 penalty to attack
 
 ###Feature: Armor
 As a character I want to be able to don armor and shield so that I can protect myself from attack
