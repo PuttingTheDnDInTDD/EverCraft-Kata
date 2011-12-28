@@ -1,5 +1,7 @@
 #EverCraft Requirements
+
 ##Iteration 1 - The Basics
+
 ###Feature: Create a Character
 
 As a character I want to have a name so that I can be distinguished from other characters
@@ -40,6 +42,7 @@ As a character I want to have several abilities so that I am not identical to ot
     Modifier | -5  | -4  | -4  | -3  | -3  | -2  | -2  | -1  | -1  |   0  |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
 
 ###Feature: Character Ability Modifiers Modify Attributes
+
 As a character I want to apply my ability modifiers improve my capabilites in combat so that I can vanquish my enemy with extreme prejudice
 
 - add Strength modifier to:
@@ -50,12 +53,15 @@ As a character I want to apply my ability modifiers improve my capabilites in co
 - add Constitution modifier to hit points (always at least 1 hit point)
 
 ##Iteration 2 - Classes, Races, & Levels
+
 ###Feature: A Character can gain experience when attacking
+
 As a character I want to accumulate experience points when I attack my enemies so that I can earn bragging rights at the tavern
 
 - When a successful attack occurs, the character gains 10 experience points
 
 ###Feature: A Character Can Level
+
 As a character I want my experience points to increase my level and combat capabilities so that I can bring vengence to my foes
 
 - Level defaults to 1
@@ -69,6 +75,7 @@ As a character I want my experience points to increase my level and combat capab
 - A 1 is added to attack roll for every even level achieved
 
 ###Feature: Characters Have Classes
+
 As a player I want a character to have a class that customizes its capabilities so that I can play more interesting characters
 
 - ideas
@@ -79,6 +86,7 @@ As a player I want a character to have a class that customizes its capabilities 
   - special abilities
 
 ####Samples
+
 As a player I want to play a fighter so that I can kick ass and take names
 
 - attacks roll is increased by 1 for every level instead of every other level
@@ -97,6 +105,7 @@ As a player I want to play a war monk so that I can enjoy being an Asian archety
 - attack roll is increased by 1 every 2nd and 3rd level
 
 ###Feature: Characters Have Races
+
 As a player I want a character to have a race that customizes its capabilities so that I can play more interesting characters
 
 - ideas
@@ -106,6 +115,7 @@ As a player I want a character to have a race that customizes its capabilities s
   - special abilities
 
 ####Samples
+
 As a player I want to play an Orc so that I can be crude, drunk, and stupid
 
 - +4 to Strength Score, -2 to Intelligence, Wisdom, and Charisma Scores
@@ -127,8 +137,10 @@ As a player I want to play a Human so that I can at least drink the elf under th
 
 - +2 to all attacks (humans are well trained fighters)
 
-##Iteration 3 - Weapons & Armor
+##Iteration 3 - Weapons, Armor & Items
+
 ###Feature: Weapons
+
 As a character I want to be able to wield weapons so that I can achieve victory through superior firepower
 
 - character can wield only one weapon
@@ -139,6 +151,7 @@ As a character I want to be able to wield weapons so that I can achieve victory 
   - weapons that certain classes or races can or cannot wield
 
 ####Samples
+
 As a character I want to be able to wield a sword so that I can look cool
 
 - does 5 points of damage
@@ -163,6 +176,7 @@ As a monk I want nun checku that work with my martial arts so that I can kick sh
 - when used by a non-monk there is a -4 penalty to attack
 
 ###Feature: Armor
+
 As a character I want to be able to don armor and shield so that I can protect myself from attack
 
 - character can only don one shield and wear one suit of armor
@@ -171,7 +185,26 @@ As a character I want to be able to don armor and shield so that I can protect m
   - magic armor that has special properties
   - armor and shields that are or are not usable by certain races or classes
 
+####Samples
+
+As a fighter I want to be able to wear plate armor so that I can ignore the blows of my enemies
+
+- +8 to Armor Class
+- can only be worn by fighters, dwarves, of dwarven fighters
+
+As a character I want to the be able to wear magical leather armor so that I can soften attacks against me
+
+- +2 to Armor Class
+- -2 to all damage received
+
+As an elf I want magic chainmail so that I can fit in with all the other elves
+
+- +5 to Armor Class
+- +8 to Armor Class if worn by an elf
+- +1 to atack if worn by an elf 
+
 ###Feature: Items
+
 As a character I want to be able to have items that enhance my capabilities so that I can be more bad-ass
 
 - can carry multiple items
@@ -180,5 +213,16 @@ As a character I want to be able to have items that enhance my capabilities so t
   - items that improve stats against certain types of critters
   - items that improve abilities
 
+####Samples
+
+As a character I want to be able to wear a ring of protection so that I can be protected from attack
+
+  - adds +2 to armor class
+
+As a character I want to be able to war a belt of giant strength so that I can be even stronger in combat
+
+  - add +4 to Strength Score
+
 ##Iteration 4 - Magic
+
 ###Feature: Spellcasting
