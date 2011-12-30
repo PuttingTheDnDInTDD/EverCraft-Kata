@@ -73,8 +73,8 @@ As a character I want my experience points to increase my level and combat capab
   - 2000 xp -> 3rd Level
   - etc.
 - For each level:
-- hit points increase by 5 plus Con modifier
-- A 1 is added to attack roll for every even level achieved
+  - hit points increase by 5 plus Con modifier
+  - 1 is added to attack roll for every even level achieved
 
 ###Feature: Characters Have Classes
 
