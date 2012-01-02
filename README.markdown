@@ -108,7 +108,12 @@ As a player I want to play a war monk so that I can enjoy being an Asian archety
 
 ###Feature: Characters Have Races
 
-As a player I want a character to have a race that customizes its capabilities so that I can play more interesting characters
+As a player I want to play a Human so that I can be boring and unoriginal
+
+- all characters default to Human
+
+As a player I want a character to have races other than Human that customize its capabilities so that I can
+play more interesting characters and wont be boring and unoriginal
 
 - ideas
   - changes in abilities
@@ -120,24 +125,20 @@ As a player I want a character to have a race that customizes its capabilities s
 
 As a player I want to play an Orc so that I can be crude, drunk, and stupid
 
-- +4 to Strength Score, -2 to Intelligence, Wisdom, and Charisma Scores
+- +2 to Strength Modifier, -1 to Intelligence, Wisdom, and Charisma Modifiers
 - +2 to Armor Class due to thick hide
 
 As a player I want to play a Dwarf so that I can drink more than the orc
 
-- +2 to Constitution Score, -2 to Charisma Score
+- +1 to Constitution Modifier, -1 to Charisma Modifier
+- doubles Constitution Modifier when adding to hit points per level (if positive)
 - +2 when attacking orcs (Dwarves hate Orcs)
-- doubles Constitution Modifier when adding to hit points per level
 
 As a player I want to play an Elf so that I can drink wine and snub my nose at the crude dwarf and orc
 
-- +2 to Dexterity Score, -2 to Constitution Score 
+- +1 to Dexterity Modifier, -1 to Constitution Modifier
 - does a critical hit on a 19 or 20, not just a 20
 - +2 to Armor Class when being attacked by orcs
-
-As a player I want to play a Human so that I can at least drink the elf under the table
-
-- +2 to all attacks (humans are well trained fighters)
 
 ##Iteration 3 - Weapons, Armor & Items
 
