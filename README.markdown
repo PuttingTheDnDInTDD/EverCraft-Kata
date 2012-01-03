@@ -137,7 +137,7 @@ As a player I want to play a Dwarf so that I can drink more than the orc
 As a player I want to play an Elf so that I can drink wine and snub my nose at the crude dwarf and orc
 
 - +1 to Dexterity Modifier, -1 to Constitution Modifier
-- does a critical hit on a 19 or 20, not just a 20
+- does adds 1 to critical range for critical hits (20 -> 19-20, 19-20 -> 18-20)
 - +2 to Armor Class when being attacked by orcs
 
 ##Iteration 3 - Weapons, Armor & Items
