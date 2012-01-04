@@ -94,7 +94,7 @@ As a player I want to play a fighter so that I can kick ass and take names
 - attacks roll is increased by 1 for every level instead of every other level
 - has 10 hit points per level instead of 5
 
-As a player I want to play a rogue so that I can defeat by enemies with finesse
+As a player I want to play a rogue so that I can defeat my enemies with finesse
 
 - does triple damage on critical hits
 - ignores an opponents Dexterity modifier (if positive) to Armor Class when attacking
