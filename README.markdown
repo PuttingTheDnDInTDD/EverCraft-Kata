@@ -1,12 +1,21 @@
 #EverCraft Requirements
 
-##Iteration 1 - The Basics
+##Iteration 1 - Core
+
+This iteration covers core functionality for leveling, combat, and character attributes.
 
 ###Feature: Create a Character
 
 As a character I want to have a name so that I can be distinguished from other characters
 
 - can get and set Name
+
+###Feature: Alignment
+
+As a character I want to have an alignment so that I have something to guide my actions
+
+- can get and set alignment
+- alignments are Good, Evil, and Neutral
 
 ###Feature: Armor Class & Hit Points
 
@@ -54,8 +63,6 @@ As a character I want to apply my ability modifiers improve my capabilites in co
 - add Dexterity modifier to armor class
 - add Constitution modifier to hit points (always at least 1 hit point)
 
-##Iteration 2 - Classes, Races, & Levels
-
 ###Feature: A Character can gain experience when attacking
 
 As a character I want to accumulate experience points when I attack my enemies so that I can earn bragging rights at the tavern
@@ -75,6 +82,10 @@ As a character I want my experience points to increase my level and combat capab
 - For each level:
   - hit points increase by 5 plus Con modifier
   - 1 is added to attack roll for every even level achieved
+
+##Iteration 2 - Classes
+
+Classes that a character can have.
 
 ###Feature: Characters Have Classes
 
@@ -102,9 +113,21 @@ As a player I want to play a rogue so that I can defeat my enemies with finesse
 
 As a player I want to play a war monk so that I can enjoy being an Asian archetype in a Medieval European setting
 
+- has 6 hit point per level instead of 5
 - does 3 points of damage instead of 1 when successfully attacking
 - adds Wisdom modifier (if positive) to Armor Class in addition to Dexterity
 - attack roll is increased by 1 every 2nd and 3rd level
+
+As a player I want to play a paladin so that I can smite evil, write wrongs, and be a self-righteous jerk
+
+- has 8 hit points per level instead of 5
+- +2 to attack and damage when attacking evil characters
+- does triple damage when attacking an evil character
+- attacks roll is increased by 1 for every level instead of every other level
+
+##Iteration 3 - Races
+
+Races that a character can be.
 
 ###Feature: Characters Have Races
 
@@ -140,7 +163,14 @@ As a player I want to play an Elf so that I can drink wine and snub my nose at t
 - does adds 1 to critical range for critical hits (20 -> 19-20, 19-20 -> 18-20)
 - +2 to Armor Class when being attacked by orcs
 
-##Iteration 3 - Weapons, Armor & Items
+As a player I want to play a Halfling so that I can steal from the other drunk characters
+
+- + 1 to Dexterity Modifier, -1 to Strength Modifier
+- +2 to Armor Class when being attacked by non Halfling (they are small and hard to hit)
+
+##Iteration 4 - Weapons, Armor & Items
+
+Items that enhance a characters capabilities.
 
 ###Feature: Weapons
 
@@ -230,6 +260,7 @@ As a character I want to be able to war a belt of giant strength so that I can b
 
   - add +4 to Strength Score
 
-##Iteration 4 - Magic
+##Iteration 5 - Battle Grid
 
-###Feature: Spellcasting
+Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
+that impacts the occupant or opponents attacking into it.  Characters can move and weapons have ranges.
