@@ -144,7 +144,7 @@ As a player I want to play an Elf so that I can drink wine and snub my nose at t
 
 ###Feature: Weapons
 
-As a character I want to be able to wield weapons so that I can achieve victory through superior firepower
+As a character I want to be able to wield a single weapon so that I can achieve victory through superior firepower
 
 - character can wield only one weapon
 - ideas
@@ -155,25 +155,25 @@ As a character I want to be able to wield weapons so that I can achieve victory 
 
 ####Samples
 
-As a character I want to be able to wield a sword so that I can look cool
+As a character I want to be able to wield a longsword so that I can look cool
 
 - does 5 points of damage
 
-As a character I want to be able to wield a magic axe that so that I can *be* cool
+As a character I want to be able to wield a +2 waraxe that so that I can *be* cool
 
 - does 6 points of damage
 - +2 to attack
 - +2 to damage
-- triple damage on a critical
+- triple damage on a critical (quadrupal for a Rogue)
 
-As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the magic axe
+As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the waraxe
 
-- does 6 points of damage
+- does 5 points of damage
 - +1 to attack and damage
 - +2 to attack and damage when wielded by an elf *or* against an orc
 - +5 to attack and damage when wielded by an elf *and* against orc
 
-As a monk I want nun checku that work with my martial arts so that I can kick shaolin style
+As a monk I want nunchucks that work with my martial arts so that I can kick ass like Chuck Norris
 
 - does 6 points of damage
 - when used by a non-monk there is a -4 penalty to attack
@@ -190,17 +190,21 @@ As a character I want to be able to don armor and shield so that I can protect m
 
 ####Samples
 
+As a character I want to the be able to wear leather armor so that I can soften attacks against me
+
+- +2 to Armor Class
+
 As a fighter I want to be able to wear plate armor so that I can ignore the blows of my enemies
 
 - +8 to Armor Class
 - can only be worn by fighters, dwarves, of dwarven fighters
 
-As a character I want to the be able to wear magical leather armor so that I can soften attacks against me
+As a character I want to the be able to wear magical leather armor of damage reduction so that I can soften attacks against me
 
 - +2 to Armor Class
 - -2 to all damage received
 
-As an elf I want magic chainmail so that I can fit in with all the other elves
+As an elf I want to be able to wear elven chainmail so that I can fit in with all the other elves
 
 - +5 to Armor Class
 - +8 to Armor Class if worn by an elf
