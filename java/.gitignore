@@ -1,0 +1,7 @@
+## Directories ##
+/build
+/dist
+/juint-results
+
+## System Generated Files
+.DS_Store
