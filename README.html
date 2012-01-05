@@ -1,0 +1,358 @@
+<h1 id="evercraftrequirements">EverCraft Requirements</h1>
+
+<h2 id="iteration1-core">Iteration 1 - Core</h2>
+
+<p>This iteration covers core functionality for leveling, combat, and character attributes.</p>
+
+<h3 id="feature:createacharacter">Feature: Create a Character</h3>
+
+<p>As a character I want to have a name so that I can be distinguished from other characters</p>
+
+<ul>
+<li>can get and set Name</li>
+</ul>
+
+<h3 id="feature:alignment">Feature: Alignment</h3>
+
+<p>As a character I want to have an alignment so that I have something to guide my actions</p>
+
+<ul>
+<li>can get and set alignment</li>
+<li>alignments are Good, Evil, and Neutral</li>
+</ul>
+
+<h3 id="feature:armorclasshitpoints">Feature: Armor Class &amp; Hit Points</h3>
+
+<p>As a combatant I want to have an armor class and hit points so that I can resist attacks from my enemies</p>
+
+<ul>
+<li>has an Armor Class that defaults to 10</li>
+<li>has 5 Hit Points by default</li>
+</ul>
+
+<h3 id="feature:charactercanattack">Feature: Character Can Attack</h3>
+
+<p>As a combatant I want to be able to attack other combatants so that I can survive to fight another day</p>
+
+<ul>
+<li>roll a 20 sided die (don&#8217;t code the die)</li>
+<li>roll must meet or beat opponents armor class to hit</li>
+</ul>
+
+<h3 id="feature:charactercanbedamaged">Feature: Character Can Be Damaged</h3>
+
+<p>As an attacker I want to be able to damage my enemies so that they will die and I will live</p>
+
+<ul>
+<li>If attack is successful, other character takes 1 point of damage when hit</li>
+<li>If a roll is a natural 20 then a critical hit is dealt and the damage is doubled</li>
+<li>when hit points are 0 or less, the character is dead</li>
+</ul>
+
+<h3 id="feature:characterhasabilitiesscores">Feature: Character Has Abilities Scores</h3>
+
+<p>As a character I want to have several abilities so that I am not identical to other characters except in name</p>
+
+<ul>
+<li>Abilities are Strength, Dexterity, Constitution, Wisdom, Intelligence, Charisma</li>
+<li>Abilities range from 1 to 20 and default to 10</li>
+<li>Abilities have modifiers according to the following table</li>
+</ul>
+
+<pre>
+Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  
+Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |  
+
+Score    |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
+Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
+</pre>
+
+<h3 id="feature:characterabilitymodifiersmodifyattributes">Feature: Character Ability Modifiers Modify Attributes</h3>
+
+<p>As a character I want to apply my ability modifiers improve my capabilites in combat so that I can vanquish my enemy with extreme prejudice</p>
+
+<ul>
+<li>add Strength modifier to:
+
+<ul>
+<li>attack roll and damage dealt</li>
+<li>double Strength modifier on critical hits</li>
+<li>minimum damage is always 1 (even on a critical hit)</li>
+</ul></li>
+<li>add Dexterity modifier to armor class</li>
+<li>add Constitution modifier to hit points (always at least 1 hit point)</li>
+</ul>
+
+<h3 id="feature:acharactercangainexperiencewhenattacking">Feature: A Character can gain experience when attacking</h3>
+
+<p>As a character I want to accumulate experience points when I attack my enemies so that I can earn bragging rights at the tavern</p>
+
+<ul>
+<li>When a successful attack occurs, the character gains 10 experience points</li>
+</ul>
+
+<h3 id="feature:acharactercanlevel">Feature: A Character Can Level</h3>
+
+<p>As a character I want my experience points to increase my level and combat capabilities so that I can bring vengence to my foes</p>
+
+<ul>
+<li>Level defaults to 1</li>
+<li>After 1000 experience points, the character gains a level
+
+<ul>
+<li>0 xp -&gt; 1st Level</li>
+<li>1000 xp -&gt; 2nd Level</li>
+<li>2000 xp -&gt; 3rd Level</li>
+<li>etc.</li>
+</ul></li>
+<li>For each level:
+
+<ul>
+<li>hit points increase by 5 plus Con modifier</li>
+<li>1 is added to attack roll for every even level achieved</li>
+</ul></li>
+</ul>
+
+<h2 id="iteration2-classes">Iteration 2 - Classes</h2>
+
+<p>Classes that a character can have.</p>
+
+<h3 id="feature:charactershaveclasses">Feature: Characters Have Classes</h3>
+
+<p>As a player I want a character to have a class that customizes its capabilities so that I can play more interesting characters</p>
+
+<h4 id="ideas">Ideas</h4>
+
+<ul>
+<li>changes in hit points</li>
+<li>changes in attack and damage</li>
+<li>increased critical range or damage</li>
+<li>bonuses/penalties versus other classes</li>
+<li>special abilities</li>
+</ul>
+
+<h4 id="samples">Samples</h4>
+
+<p>As a player I want to play a fighter so that I can kick ass and take names</p>
+
+<ul>
+<li>attacks roll is increased by 1 for every level instead of every other level</li>
+<li>has 10 hit points per level instead of 5</li>
+</ul>
+
+<p>As a player I want to play a rogue so that I can defeat my enemies with finesse</p>
+
+<ul>
+<li>does triple damage on critical hits</li>
+<li>ignores an opponents Dexterity modifier (if positive) to Armor Class when attacking</li>
+<li>adds Dexterity modifier to attacks instead of Strength</li>
+</ul>
+
+<p>As a player I want to play a war monk so that I can enjoy being an Asian archetype in a Medieval European setting</p>
+
+<ul>
+<li>has 6 hit point per level instead of 5</li>
+<li>does 3 points of damage instead of 1 when successfully attacking</li>
+<li>adds Wisdom modifier (if positive) to Armor Class in addition to Dexterity</li>
+<li>attack roll is increased by 1 every 2nd and 3rd level</li>
+</ul>
+
+<p>As a player I want to play a paladin so that I can smite evil, write wrongs, and be a self-righteous jerk</p>
+
+<ul>
+<li>has 8 hit points per level instead of 5</li>
+<li>+2 to attack and damage when attacking evil characters</li>
+<li>does triple damage when attacking an evil character</li>
+<li>attacks roll is increased by 1 for every level instead of every other level</li>
+</ul>
+
+<h2 id="iteration3-races">Iteration 3 - Races</h2>
+
+<p>Races that a character can be.</p>
+
+<h3 id="feature:charactershaveraces">Feature: Characters Have Races</h3>
+
+<p>As a player I want to play a Human so that I can be boring and unoriginal</p>
+
+<ul>
+<li>all characters default to Human</li>
+</ul>
+
+<p>As a player I want a character to have races other than Human that customize its capabilities so that I can
+play more interesting characters and wont be boring and unoriginal</p>
+
+<h4 id="ideas">Ideas</h4>
+
+<ul>
+<li>changes in abilities</li>
+<li>increased critical range or damage</li>
+<li>bonuses/penalties versus other races</li>
+<li>special abilities</li>
+</ul>
+
+<h4 id="samples">Samples</h4>
+
+<p>As a player I want to play an Orc so that I can be crude, drunk, and stupid</p>
+
+<ul>
+<li>+2 to Strength Modifier, &#8211;1 to Intelligence, Wisdom, and Charisma Modifiers</li>
+<li>+2 to Armor Class due to thick hide</li>
+</ul>
+
+<p>As a player I want to play a Dwarf so that I can drink more than the orc</p>
+
+<ul>
+<li>+1 to Constitution Modifier, &#8211;1 to Charisma Modifier</li>
+<li>doubles Constitution Modifier when adding to hit points per level (if positive)</li>
+<li>+2 when attacking orcs (Dwarves hate Orcs)</li>
+</ul>
+
+<p>As a player I want to play an Elf so that I can drink wine and snub my nose at the crude dwarf and orc</p>
+
+<ul>
+<li>+1 to Dexterity Modifier, &#8211;1 to Constitution Modifier</li>
+<li>does adds 1 to critical range for critical hits (20 -&gt; 19&#8211;20, 19&#8211;20 -&gt; 18&#8211;20)</li>
+<li>+2 to Armor Class when being attacked by orcs</li>
+</ul>
+
+<p>As a player I want to play a Halfling so that I can steal from the other drunk characters</p>
+
+<ul>
+<li>+1 to Dexterity Modifier, &#8211;1 to Strength Modifier</li>
+<li>+2 to Armor Class when being attacked by non Halfling (they are small and hard to hit)</li>
+</ul>
+
+<h2 id="iteration4-weaponsarmoritems">Iteration 4 - Weapons, Armor &amp; Items</h2>
+
+<p>Items that enhance a characters capabilities.</p>
+
+<h3 id="feature:weapons">Feature: Weapons</h3>
+
+<p>As a character I want to be able to wield a single weapon so that I can achieve victory through superior firepower</p>
+
+<ul>
+<li>character can wield only one weapon</li>
+</ul>
+
+<h4 id="ideas">Ideas</h4>
+
+<ul>
+<li>basic weapons that improve damage (dagger)</li>
+<li>basic weapons that improve to attacks (+1 sword)</li>
+<li>magic weapons with special properties (knife of ogre slaying)</li>
+<li>weapons that certain classes or races can or cannot wield</li>
+</ul>
+
+<h4 id="samples">Samples</h4>
+
+<p>As a character I want to be able to wield a longsword so that I can look cool</p>
+
+<ul>
+<li>does 5 points of damage</li>
+</ul>
+
+<p>As a character I want to be able to wield a +2 waraxe that so that I can <em>be</em> cool</p>
+
+<ul>
+<li>does 6 points of damage</li>
+<li>+2 to attack</li>
+<li>+2 to damage</li>
+<li>triple damage on a critical (quadrupal for a Rogue)</li>
+</ul>
+
+<p>As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the waraxe</p>
+
+<ul>
+<li>does 5 points of damage</li>
+<li>+1 to attack and damage</li>
+<li>+2 to attack and damage when wielded by an elf <em>or</em> against an orc</li>
+<li>+5 to attack and damage when wielded by an elf <em>and</em> against orc</li>
+</ul>
+
+<p>As a monk I want nunchucks that work with my martial arts so that I can kick ass like Chuck Norris</p>
+
+<ul>
+<li>does 6 points of damage</li>
+<li>when used by a non-monk there is a &#8211;4 penalty to attack</li>
+</ul>
+
+<h3 id="feature:armor">Feature: Armor</h3>
+
+<p>As a character I want to be able to don armor and shield so that I can protect myself from attack</p>
+
+<ul>
+<li>character can only don one shield and wear one suit of armor</li>
+</ul>
+
+<h4 id="ideas">Ideas</h4>
+
+<ul>
+<li>basic armor that improves armor class (plate)</li>
+<li>magic armor that has special properties</li>
+<li>armor and shields that are or are not usable by certain races or classes</li>
+</ul>
+
+<h4 id="samples">Samples</h4>
+
+<p>As a character I want to the be able to wear leather armor so that I can soften attacks against me</p>
+
+<ul>
+<li>+2 to Armor Class</li>
+</ul>
+
+<p>As a fighter I want to be able to wear plate armor so that I can ignore the blows of my enemies</p>
+
+<ul>
+<li>+8 to Armor Class</li>
+<li>can only be worn by fighters, dwarves, of dwarven fighters</li>
+</ul>
+
+<p>As a character I want to the be able to wear magical leather armor of damage reduction so that I can soften attacks against me</p>
+
+<ul>
+<li>+2 to Armor Class</li>
+<li>&#8211;2 to all damage received</li>
+</ul>
+
+<p>As an elf I want to be able to wear elven chainmail so that I can fit in with all the other elves</p>
+
+<ul>
+<li>+5 to Armor Class</li>
+<li>+8 to Armor Class if worn by an elf</li>
+<li>+1 to atack if worn by an elf</li>
+</ul>
+
+<h3 id="feature:items">Feature: Items</h3>
+
+<p>As a character I want to be able to have items that enhance my capabilities so that I can be more bad-ass</p>
+
+<ul>
+<li>can carry multiple items</li>
+</ul>
+
+<h4 id="ideas">Ideas</h4>
+
+<ul>
+<li>items that improve combat with types of weapons</li>
+<li>items that improve stats against certain types of critters</li>
+<li>items that improve abilities</li>
+</ul>
+
+<h4 id="samples">Samples</h4>
+
+<p>As a character I want to be able to wear a ring of protection so that I can be protected from attack</p>
+
+<ul>
+<li>adds +2 to armor class</li>
+</ul>
+
+<p>As a character I want to be able to war a belt of giant strength so that I can be even stronger in combat</p>
+
+<ul>
+<li>add +4 to Strength Score</li>
+</ul>
+
+<h2 id="bonusiteration-battlegrid">Bonus Iteration - Battle Grid</h2>
+
+<p>Build your own features here. Multiple characters can be on a grid-based map. Each square on the map had terrain
+that impacts the occupant or opponents attacking into it. Characters can move and weapons have ranges.</p>
