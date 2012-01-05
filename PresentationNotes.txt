@@ -1,0 +1,72 @@
+Introduction
+============
+Intro George & Guy
+
+Level Set
+=========
+- interupt us
+- all level sessions so
+  + we'll cover some basics
+    - but not too deep
+  + if your an expert then feel free to ignore us
+- not here to sell you on TDD and Pairing
+  + the practice should do that
+  + we will tell you how -- the benefits you will experience
+- language agnostic
+
+Overview of Kata (i.e. the What)
+================================
+- what's a Kata and why do we do them?
+  + audience answers
+  + paint the fence Daniel-san
+- this is the Evercraft Kata
+  + tell the story
+    - better kata
+    - game idea from Tim Wingenfield
+    - George and I land on a whopper
+  + point of kata is bigger and meatier than Bowling or Prime Factors
+- role-playing (as product owners not with dice)
+  + we will be the product owners
+  + you will be the expert developers
+    - building the domain model
+- but we're picky
+  + we demand TDD and Pairing
+
+TDD
+===
+- explain the past
+  + bad old days
+  + unit testing
+  + TDD compliments of Kent Beck
+- explain the process
+  + red
+  + green
+  + refactor
+
+Ping Pong Paring
+================
+- explain how it is the same
+- added benefit - no rat holes
+
+Dos & Don'ts
+============
+
+Exercise Notes
+==============
+- coding the model only
+- no dice (it complicates things and distracts from the purpose)
+- ask questions
+  + as product owners we don't always know what we want
+  + as workshop facilitators we likely have gaps in out cards
+- starter projects are on github
+  + and on these thumb drives
+
+Pair Up
+=======
+- point out experts until group is evenly divided
+  + encourage pairing with experts
+- ask about languages
+  + Ruby, Java, .NET, JavaScript, CoffeeScript, Clojure, Scala, Groovy, Dart... nevermind!
+  + any others?
+- everyone pairs up and then
+  + handout time!
