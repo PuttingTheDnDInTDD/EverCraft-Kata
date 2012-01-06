@@ -1,33 +1,38 @@
 <project name="hello" default="dist" basedir=".">
   <description>KSB's ant 'Hello, world' build.xml example</description>
 
-  <property name="src.dir"   value="src"/>
+  <property name="src.dir"   value="src/main/java"/>
+  <property name="test.src.dir"   value="src/tests/java"/>
   <property name="build.dir" value="build"/>
   <property name="dist.dir"  value="dist"/>
   <property name="junit.dir" value="junit-results"/>
 
-  <property name="junit.jar" location="./lib/junit-4.10-src.jar"/>
+  <property name="junit.lib" location="lib/junit-4.10.jar"/>
   <property name="test.class" value="hello.TestHello"/>
-
-  <path id="classpath">
-    <pathelement location="${build.dir}" />
-    <pathelement location="${junit.jar}" />
-  </path>
 
   <target name="init">
     <mkdir dir="${build.dir}"/>
     <mkdir dir="${dist.dir}"/>
     <mkdir dir="${junit.dir}"/>
   </target>
+  
+  <path id="classpath">
+      <pathelement location="${build.dir}" />
+      <pathelement location="${junit.lib}" />    
+  </path>
 
   <target name="build" depends="init" description="build everything under ${src.dir}" >
-    <javac srcdir="${src.dir}" destdir="${build.dir}">
-      <classpath refid="classpath"/>
+    <javac srcdir="${src.dir}" destdir="${build.dir}" />
+  </target>
+
+  <target name="buildtests" depends="init" description="build everything under ${src.dir}" >
+    <javac srcdir="${test.src.dir}" destdir="${build.dir}">
+        <classpath refid="classpath"/>
     </javac>
   </target>
 
-  <target name="test" depends="build" description="unit test" >
-	<junit errorProperty="test.failed" failureProperty="test.failed">
+  <target name="test" depends="build, buildtests" description="unit test" >
+    <junit errorProperty="test.failed" failureProperty="test.failed">
       <test name="${test.class}" todir="${junit.dir}" />
       <formatter type="brief" usefile="false" />
       <formatter type="xml" />

@@ -2,6 +2,7 @@ package hello;
 
 import org.junit.Test;
 
+
 import static org.junit.Assert.assertEquals;
 
 public class TestHello {
@@ -9,6 +10,6 @@ public class TestHello {
 	@Test
 	public void testHello() {
 		Hello h = new Hello();
-		assertEquals(h.greet(), "Hello, World");
+		assertEquals(h.greet(), "Hello, world");
 	}
 }

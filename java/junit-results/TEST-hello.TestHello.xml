@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="NW626588.local" name="hello.TestHello" tests="1" time="0.032" timestamp="2012-01-06T16:07:09">
+  <properties>
+    <property name="java.vendor" value="Apple Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="https.proxyHost" value="127.0.0.1" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.6.0_29-b11-402-10M3527" />
+    <property name="http.proxyPort" value="8282" />
+    <property name="user.name" value="walterg2" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="build.dir" value="build" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="ant.project.default-target" value="dist" />
+    <property name="ant.project.name" value="hello" />
+    <property name="java.version" value="1.6.0_29" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="test.src.dir" value="src/tests/java" />
+    <property name="http.nonProxyHosts" value="nwie.net|*.nwie.net|local|*.local|127.0.0.1|nwideweb.net|*.nwideweb.net|nwielab.net|*.nwielab.net|localhost|*.localhost" />
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="dist.dir" value="dist" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/build.xml" />
+    <property name="os.version" value="10.6.8" />
+    <property name="https.proxyPort" value="8282" />
+    <property name="ftp.proxyHost" value="127.0.0.1" />
+    <property name="junit.lib" value="/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/lib/junit-4.10.jar" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="20.4-b02-402" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="ant.file.type.hello" value="file" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="socksNonProxyHosts" value="nwie.net|*.nwie.net|local|*.local|127.0.0.1|nwideweb.net|*.nwideweb.net|nwielab.net|*.nwielab.net|localhost|*.localhost" />
+    <property name="ftp.nonProxyHosts" value="nwie.net|*.nwie.net|local|*.local|127.0.0.1|nwideweb.net|*.nwideweb.net|nwielab.net|*.nwielab.net|localhost|*.localhost" />
+    <property name="ant.file.hello" value="/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/build.xml" />
+    <property name="user.home" value="/Users/walterg2" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="junit.dir" value="junit-results" />
+    <property name="java.library.path" value=".:/Users/walterg2/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="java.vendor.url" value="http://www.apple.com/" />
+    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  test" />
+    <property name="java.class.path" value="/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on October 14 2011" />
+    <property name="test.class" value="hello.TestHello" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/LO/LOfHbXk2F84w8r0bJxfp0k+++Tc/-Tmp-/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+    <property name="http.proxyHost" value="127.0.0.1" />
+    <property name="mrj.build" value="10M3527" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Users/walterg2/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+    <property name="ftp.proxyPort" value="8282" />
+    <property name="user.dir" value="/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java" />
+    <property name="mrj.version" value="1060.1.6.0_29-402" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="src.dir" value="src/main/java" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="hello.TestHello" name="testHello" time="0.0020" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
