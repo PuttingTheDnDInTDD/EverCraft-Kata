@@ -1,4 +1,15 @@
-# EverCraft Requirements
+# The EverCraft Kata
+
+In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
+follow the requirements below, pairing and test driving your code of course, and have fun.
+
+This document and several sample projects can be found on-line at [https://github.com/walterg2/EverCraft-Kata] (https://github.com/walterg2/EverCraft-Kata)
+
+May all your rolls be 20s.
+
+Guy Royse [(@guyroyse)] (https://twitter.com/#!/guyroyse) and George Walters II [(@walterg2)] (https://twitter.com/#!/walterg2)
+
+# Requirements
 
 ## Iteration 1 - Core
 
@@ -48,16 +59,18 @@ As a character I want to have several abilities so that I am not identical to ot
 - Abilities have modifiers according to the following table
 
 <pre>
+         +------+------+------+------+------+------+------+------+------+------+
 Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  
 Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |  
-
+         +------+------+------+------+------+------+------+------+------+------+
 Score    |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
 Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
+         +------+------+------+------+------+------+------+------+------+------+
 </pre>
 
 ### Feature: Character Ability Modifiers Modify Attributes
 
-As a character I want to apply my ability modifiers improve my capabilites in combat so that I can vanquish my enemy with extreme prejudice
+As a character I want to apply my ability modifiers improve my capabilities in combat so that I can vanquish my enemy with extreme prejudice
 
 - add Strength modifier to:
     - attack roll and damage dealt
@@ -74,7 +87,7 @@ As a character I want to accumulate experience points when I attack my enemies s
 
 ### Feature: A Character Can Level
 
-As a character I want my experience points to increase my level and combat capabilities so that I can bring vengence to my foes
+As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes
 
 - Level defaults to 1
 - After 1000 experience points, the character gains a level 
@@ -201,7 +214,7 @@ As a character I want to be able to wield a +2 waraxe that so that I can *be* co
 - does 6 points of damage
 - +2 to attack
 - +2 to damage
-- triple damage on a critical (quadrupal for a Rogue)
+- triple damage on a critical (quadruple for a Rogue)
 
 As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the waraxe
 
@@ -210,7 +223,7 @@ As an elf I want to be able to wield a elven longsword that so I can stick it to
 - +2 to attack and damage when wielded by an elf *or* against an orc
 - +5 to attack and damage when wielded by an elf *and* against orc
 
-As a monk I want nunchucks that work with my martial arts so that I can kick ass like Chuck Norris
+As a monk I want nun chucks that work with my martial arts so that I can kick ass like Chuck Norris
 
 - does 6 points of damage
 - when used by a non-monk there is a -4 penalty to attack
@@ -243,11 +256,11 @@ As a character I want to the be able to wear magical leather armor of damage red
 - +2 to Armor Class
 - -2 to all damage received
 
-As an elf I want to be able to wear elven chainmail so that I can fit in with all the other elves
+As an elf I want to be able to wear elven chain mail so that I can fit in with all the other elves
 
 - +5 to Armor Class
 - +8 to Armor Class if worn by an elf
-- +1 to atack if worn by an elf 
+- +1 to attack if worn by an elf 
 
 ### Feature: Items
 

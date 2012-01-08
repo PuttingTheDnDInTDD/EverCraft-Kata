@@ -1,4 +1,15 @@
-<h1 id="evercraftrequirements">EverCraft Requirements</h1>
+<h1 id="theevercraftkata">The EverCraft Kata</h1>
+
+<p>In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast. Just
+follow the requirements below, pairing and test driving your code of course, and have fun.</p>
+
+<p>This document and several sample projects can be found on-line at <a href="https://github.com/walterg2/EverCraft-Kata">https://github.com/walterg2/EverCraft-Kata</a></p>
+
+<p>May all your rolls be 20s.</p>
+
+<p>Guy Royse <a href="https://twitter.com/#!/guyroyse">(@guyroyse)</a> and George Walters II <a href="https://twitter.com/#!/walterg2">(@walterg2)</a></p>
+
+<h1 id="requirements">Requirements</h1>
 
 <h2 id="iteration1-core">Iteration 1 - Core</h2>
 
@@ -60,16 +71,18 @@
 </ul>
 
 <pre>
+         +------+------+------+------+------+------+------+------+------+------+
 Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  
 Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |  
-
+         +------+------+------+------+------+------+------+------+------+------+
 Score    |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
 Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
+         +------+------+------+------+------+------+------+------+------+------+
 </pre>
 
 <h3 id="feature:characterabilitymodifiersmodifyattributes">Feature: Character Ability Modifiers Modify Attributes</h3>
 
-<p>As a character I want to apply my ability modifiers improve my capabilites in combat so that I can vanquish my enemy with extreme prejudice</p>
+<p>As a character I want to apply my ability modifiers improve my capabilities in combat so that I can vanquish my enemy with extreme prejudice</p>
 
 <ul>
 <li>add Strength modifier to:
@@ -93,7 +106,7 @@ Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
 
 <h3 id="feature:acharactercanlevel">Feature: A Character Can Level</h3>
 
-<p>As a character I want my experience points to increase my level and combat capabilities so that I can bring vengence to my foes</p>
+<p>As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes</p>
 
 <ul>
 <li>Level defaults to 1</li>
@@ -257,7 +270,7 @@ play more interesting characters and wont be boring and unoriginal</p>
 <li>does 6 points of damage</li>
 <li>+2 to attack</li>
 <li>+2 to damage</li>
-<li>triple damage on a critical (quadrupal for a Rogue)</li>
+<li>triple damage on a critical (quadruple for a Rogue)</li>
 </ul>
 
 <p>As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the waraxe</p>
@@ -269,7 +282,7 @@ play more interesting characters and wont be boring and unoriginal</p>
 <li>+5 to attack and damage when wielded by an elf <em>and</em> against orc</li>
 </ul>
 
-<p>As a monk I want nunchucks that work with my martial arts so that I can kick ass like Chuck Norris</p>
+<p>As a monk I want nun chucks that work with my martial arts so that I can kick ass like Chuck Norris</p>
 
 <ul>
 <li>does 6 points of damage</li>
@@ -314,12 +327,12 @@ play more interesting characters and wont be boring and unoriginal</p>
 <li>&#8211;2 to all damage received</li>
 </ul>
 
-<p>As an elf I want to be able to wear elven chainmail so that I can fit in with all the other elves</p>
+<p>As an elf I want to be able to wear elven chain mail so that I can fit in with all the other elves</p>
 
 <ul>
 <li>+5 to Armor Class</li>
 <li>+8 to Armor Class if worn by an elf</li>
-<li>+1 to atack if worn by an elf</li>
+<li>+1 to attack if worn by an elf</li>
 </ul>
 
 <h3 id="feature:items">Feature: Items</h3>
