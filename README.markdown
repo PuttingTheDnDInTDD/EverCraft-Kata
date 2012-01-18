@@ -139,7 +139,7 @@ As a player I want to play a paladin so that I can smite evil, write wrongs, and
 
 - has 8 hit points per level instead of 5
 - +2 to attack and damage when attacking evil characters
-- does triple damage when attacking an evil character
+- does triple damage when critting on an evil character (i.e. add the +2 bonus for a regular attack, and then triple that)
 - attacks roll is increased by 1 for every level instead of every other level
 
 ## Iteration 3 - Races
@@ -173,7 +173,7 @@ As a player I want to play a Dwarf so that I can drink more than the orc
 
 - +1 to Constitution Modifier, -1 to Charisma Modifier
 - doubles Constitution Modifier when adding to hit points per level (if positive)
-- +2 when attacking orcs (Dwarves hate Orcs)
+- +2 bonus to attack/damage when attacking orcs (Dwarves hate Orcs)
 
 As a player I want to play an Elf so that I can drink wine and snub my nose at the crude dwarf and orc
 
