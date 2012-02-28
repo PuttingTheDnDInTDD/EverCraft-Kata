@@ -18,6 +18,7 @@ import org.junit.Test;
 public class CharacterTest {
 
 	private static Character character;
+	private static Character defender;
 	private static final String characterName = "Rieekan";
 	private static final String characterAlignmentGood = "Good";
 	private static final String characterAlignmentNeutral = "Neutral";
@@ -43,6 +44,8 @@ public class CharacterTest {
 	@Before
 	public void setUp() throws Exception {
 		character = new Character(characterName, characterAlignmentGood);
+		defender = new Character("Bob", "Good");
+		
 	}
 
 	/**
@@ -87,10 +90,8 @@ public class CharacterTest {
 	}
 	
 	@Test
-	public void testCharacterCanAttackAnother() {
-		Character defender = new Character("Bob", "Good");
-		
-		assertTrue(character.attack(defender, 10));
+	public void testCharacterCanSuccessfullyAttackAnother() {
+		assertTrue(character.attack(defender, (defender.getArmorClass() + 2)));
 	}
 
 }
