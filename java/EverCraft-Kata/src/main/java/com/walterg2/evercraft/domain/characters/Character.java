@@ -11,6 +11,7 @@ public class Character {
 	
 	private String name;
 	private String alignment;
+	private int armorClass = 10;
 	
 	public Character(String name, String alignment) {
 		this.name = name;
@@ -29,6 +30,13 @@ public class Character {
 	 */
 	public String getAlignment() {
 		return alignment;
+	}
+
+	/**
+	 * @return the armorClass
+	 */
+	public int getArmorClass() {
+		return armorClass;
 	}
 
 }
