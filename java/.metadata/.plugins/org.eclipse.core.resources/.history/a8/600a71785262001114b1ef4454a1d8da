@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.walterg2.evercraft.domain.characters;
+
+/**
+ * @author walterg2
+ *
+ */
+public class Character {
+
+}
