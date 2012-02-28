@@ -63,10 +63,17 @@ public class Character {
 	public boolean damage(int damageTaken) {
 		this.hitPoints = this.hitPoints - damageTaken;
 		
+		if (this.hitPoints < 0) {
+			this.hitPoints = 0;
+		}
+		
 		return true;
 	}
 	
 	public boolean isDead() {
+		if (this.hitPoints > 0) {
+			return false;
+		}
 		return true;
 	}
 
