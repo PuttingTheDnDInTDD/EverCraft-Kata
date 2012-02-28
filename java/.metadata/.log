@@ -1,0 +1,62 @@
+
+!ENTRY org.eclipse.core.resources 4 568 2012-02-28 16:15:51.737
+!MESSAGE Could not write workspace metadata '/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/.metadata/.plugins/org.eclipse.core.resources/.snap'.
+!STACK 0
+java.io.FileNotFoundException: /Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/.metadata/.plugins/org.eclipse.core.resources/.snap (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.snapTree(SaveManager.java:1447)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1162)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1108)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.ide 4 4 2012-02-28 16:16:02.671
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2012-02-28 16:16:02.677
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2012-02-28 16:16:02.677
+!MESSAGE Could not write workspace metadata '/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree'.
+!STACK 0
+java.io.FileNotFoundException: /Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1349)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1133)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2012-02-28 16:16:08.018 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/walterg2/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/walterg2/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.352
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|nwie.net|*.nwie.net|nwideweb.net|*.nwideweb.net|nwielab.net|*.nwielab.net by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.362
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.369
+!MESSAGE System property http.proxyPort is not set but should be 8282.
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.376
+!MESSAGE System property https.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.383
+!MESSAGE System property https.proxyPort is not set but should be 8282.
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.390
+!MESSAGE System property https.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2012-02-28 16:16:17.397
+!MESSAGE System property https.proxyPort is not set but should be 8282.

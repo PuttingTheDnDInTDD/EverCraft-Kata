@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExtractTempWizard">
+		<item value="true" key="replaceOccurrences"/>
+		<item value="true" key="declareFinal"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="400" key="height"/>
+		<item value="600" key="width"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="true" key="deleteSubPackages"/>
+		<item value="false" key="qualifyReferences"/>
+	</section>
+</section>
