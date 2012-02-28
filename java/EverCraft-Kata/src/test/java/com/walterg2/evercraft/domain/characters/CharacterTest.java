@@ -94,4 +94,9 @@ public class CharacterTest {
 		assertTrue(character.attack(defender, (defender.getArmorClass() + 2)));
 	}
 
+	@Test
+	public void testCharacterCanUnsuccessfullyAttackAnother() {
+		assertFalse(character.attack(defender, (defender.getArmorClass() - 2)));
+	}
+
 }
