@@ -132,5 +132,10 @@ public class CharacterTest {
 		
 		assertFalse(defender.isDead());
 	}
+	
+	@Test
+	public void testCharacterHasAStrengthAbility() {
+		assertEquals(character.getStrengthScore(), 10);
+	}
 
 }
