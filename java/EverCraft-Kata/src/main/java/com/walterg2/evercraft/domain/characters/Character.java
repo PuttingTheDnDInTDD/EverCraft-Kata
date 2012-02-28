@@ -65,5 +65,9 @@ public class Character {
 		
 		return true;
 	}
+	
+	public boolean isDead() {
+		return true;
+	}
 
 }
