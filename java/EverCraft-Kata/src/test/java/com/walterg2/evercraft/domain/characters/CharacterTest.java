@@ -100,5 +100,13 @@ public class CharacterTest {
 	public void testCharacterCanUnsuccessfullyAttackAnother() {
 		assertFalse(character.attack(defender, (defender.getArmorClass() - 2)));
 	}
+	
+	@Test
+	public void testDefendingCharacterCanBeDamaged() {
+		int defenderStartingHitPoints = defender.getHitPoints();
+		character.attack(defender, (defender.getArmorClass() + 2));
+		
+		assertEquals(defender.getHitPoints(), (defenderStartingHitPoints - 1));
+	}
 
 }
