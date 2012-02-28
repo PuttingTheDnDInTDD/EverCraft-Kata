@@ -9,12 +9,14 @@ package com.walterg2.evercraft.domain.characters;
  */
 public class Character {
 	
+	public enum Alignment { EVIL, NEUTRAL, GOOD };
+
 	private String name;
-	private String alignment;
+	private Alignment alignment;
 	private int armorClass = 10;
 	private int hitPoints = 5;
 	
-	public Character(String name, String alignment) {
+	public Character(String name, Alignment alignment) {
 		this.name = name;
 		this.alignment = alignment;
 	}
@@ -29,7 +31,7 @@ public class Character {
 	/**
 	 * @return the alignment
 	 */
-	public String getAlignment() {
+	public Alignment getAlignment() {
 		return alignment;
 	}
 

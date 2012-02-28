@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.walterg2.evercraft.domain.characters.Character.Alignment;
+
 /**
  * @author walterg2
  *
@@ -20,9 +22,9 @@ public class CharacterTest {
 	private static Character character;
 	private static Character defender;
 	private static final String characterName = "Rieekan";
-	private static final String characterAlignmentGood = "Good";
-	private static final String characterAlignmentNeutral = "Neutral";
-	private static final String characterAlignmentEvil = "Evil";
+	private static final Alignment characterAlignmentGood = Alignment.GOOD;
+	private static final Alignment characterAlignmentNeutral = Alignment.NEUTRAL;
+	private static final Alignment characterAlignmentEvil = Alignment.EVIL;
 
 	/**
 	 * @throws java.lang.Exception
@@ -44,7 +46,7 @@ public class CharacterTest {
 	@Before
 	public void setUp() throws Exception {
 		character = new Character(characterName, characterAlignmentGood);
-		defender = new Character("Bob", "Good");
+		defender = new Character("Bob", characterAlignmentGood);
 		
 	}
 
