@@ -81,4 +81,9 @@ public class CharacterTest {
 		assertEquals(character.getArmorClass(), 10);
 	}
 
+	@Test
+	public void testCharacterHasInitialHitPointsOf5() {
+		assertEquals(character.getHitPoints(), 5);
+	}
+
 }
