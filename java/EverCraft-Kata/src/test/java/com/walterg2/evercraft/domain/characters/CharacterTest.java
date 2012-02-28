@@ -126,4 +126,11 @@ public class CharacterTest {
 		assertTrue(defender.isDead());
 	}
 
+	@Test
+	public void testDefendingCharacterIsNotDead() {
+		character.attack(defender, 20);
+		
+		assertFalse(defender.isDead());
+	}
+
 }
