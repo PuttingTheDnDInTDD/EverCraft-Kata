@@ -1,3 +1,5 @@
 *~
 *.swp
 .DS_Store
+.metadata
+java/.metadata
