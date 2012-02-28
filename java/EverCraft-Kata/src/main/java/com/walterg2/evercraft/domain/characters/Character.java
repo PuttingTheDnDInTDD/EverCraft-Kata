@@ -50,12 +50,13 @@ public class Character {
 	}
 	
 	public boolean attack(Character defender, int roll) {
+		int damage = 1;
 		
 		if (defender.getArmorClass() > roll) {
 			return false;
 		}
 		
-		defender.damage(1);
+		defender.damage((roll == 20) ? damage * 2 : damage);
 		return true;
 	}
 	

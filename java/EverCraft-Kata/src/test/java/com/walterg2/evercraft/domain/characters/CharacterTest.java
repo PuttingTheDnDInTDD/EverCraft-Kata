@@ -109,4 +109,12 @@ public class CharacterTest {
 		assertEquals(defender.getHitPoints(), (defenderStartingHitPoints - 1));
 	}
 
+	@Test
+	public void testDefendingCharacterReceivesDoubleDamageForCriticalHit() {
+		int defenderStartingHitPoints = defender.getHitPoints();
+		character.attack(defender, 20);
+		
+		assertEquals(defender.getHitPoints(), (defenderStartingHitPoints - 2));
+	}
+
 }
