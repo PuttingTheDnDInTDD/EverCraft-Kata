@@ -55,12 +55,12 @@ public class Character {
 			return false;
 		}
 		
-		defender.damage();
+		defender.damage(1);
 		return true;
 	}
 	
-	public boolean damage() {
-		this.hitPoints = this.hitPoints - 1;
+	public boolean damage(int damageTaken) {
+		this.hitPoints = this.hitPoints - damageTaken;
 		
 		return true;
 	}
