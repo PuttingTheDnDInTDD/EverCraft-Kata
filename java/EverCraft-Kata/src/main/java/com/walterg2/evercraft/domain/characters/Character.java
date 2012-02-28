@@ -49,6 +49,10 @@ public class Character {
 	
 	public boolean attack(Character defender, int roll) {
 		
+		if (defender.getArmorClass() > roll) {
+			return false;
+		}
+		
 		return true;
 	}
 
