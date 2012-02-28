@@ -15,7 +15,6 @@ INDEX VERSION 1.126+/Users/walterg2/Workspaces/HomeProjects/EverCraft-Kata/java/
 4249315662.index
 1819685514.index
 84777399.index
-1087475060.index
 1384487945.index
 1271342938.index
 2545238116.index
