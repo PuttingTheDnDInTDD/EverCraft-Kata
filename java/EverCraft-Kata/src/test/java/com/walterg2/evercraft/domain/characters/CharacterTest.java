@@ -135,7 +135,7 @@ public class CharacterTest {
 	
 	@Test
 	public void testCharacterHasAStrengthAbility() {
-		assertEquals(character.getStrengthScore(), 10);
+		assertEquals(character.getStrength().getScore(), 10);
 	}
 
 }

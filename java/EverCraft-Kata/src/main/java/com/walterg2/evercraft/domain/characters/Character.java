@@ -15,6 +15,7 @@ public class Character {
 	private Alignment alignment;
 	private int armorClass = 10;
 	private int hitPoints = 5;
+	private CharacterAbility strength = new CharacterAbility(10);
 	
 	public Character(String name, Alignment alignment) {
 		this.name = name;
@@ -75,6 +76,10 @@ public class Character {
 			return false;
 		}
 		return true;
+	}
+	
+	public CharacterAbility getStrength() {
+		return strength;
 	}
 
 }
