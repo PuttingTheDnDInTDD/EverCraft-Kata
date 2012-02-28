@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;characterName&apos; from expression &apos;&quot;Rieekan&quot;&apos;&#x0A;- Original project: &apos;EverCraft-Kata&apos;&#x0A;- Constant name: &apos;characterName&apos;&#x0A;- Constant expression: &apos;&quot;Rieekan&quot;&apos;&#x0A;- Declared visibility: &apos;private&apos;&#x0A;- Replace occurrences of expression with constant" description="Extract constant &apos;characterName&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/src\/test\/java&lt;com.walterg2.evercraft.domain.characters{CharacterTest.java" name="characterName" qualify="false" replace="true" selection="855 9" stamp="1330464064578" version="1.0" visibility="2"/>
+</session>
