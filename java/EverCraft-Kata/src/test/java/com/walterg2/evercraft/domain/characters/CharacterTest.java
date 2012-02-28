@@ -17,6 +17,7 @@ import org.junit.Test;
  */
 public class CharacterTest {
 
+	private static Character character;
 	private static final String characterName = "Rieekan";
 	private static final String characterAlignmentGood = "Good";
 	private static final String characterAlignmentNeutral = "Neutral";
@@ -41,6 +42,7 @@ public class CharacterTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		character = new Character(characterName, characterAlignmentGood);
 	}
 
 	/**
@@ -52,15 +54,11 @@ public class CharacterTest {
 
 	@Test
 	public void testCharacterHasAName() {
-		Character character = new Character(characterName, characterAlignmentGood);
-		
 		assertEquals(character.getName(), characterName);
 	}
 	
 	@Test
 	public void testCharacterCanHaveAGoodAlignment() {
-		Character character = new Character(characterName, characterAlignmentGood);
-		
 		assertEquals(character.getAlignment(), characterAlignmentGood);
 	}
 
