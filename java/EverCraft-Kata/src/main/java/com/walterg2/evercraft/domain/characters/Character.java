@@ -55,6 +55,13 @@ public class Character {
 			return false;
 		}
 		
+		defender.damage();
+		return true;
+	}
+	
+	public boolean damage() {
+		this.hitPoints = this.hitPoints - 1;
+		
 		return true;
 	}
 
