@@ -46,5 +46,10 @@ public class Character {
 	public int getHitPoints() {
 		return hitPoints;
 	}
+	
+	public boolean attack(Character defender, int roll) {
+		
+		return true;
+	}
 
 }
