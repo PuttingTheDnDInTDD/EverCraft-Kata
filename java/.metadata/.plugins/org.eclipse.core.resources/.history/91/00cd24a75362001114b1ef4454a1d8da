@@ -17,7 +17,6 @@ import org.junit.Test;
  */
 public class CharacterTest {
 
-	private static final String characterAlignment = "Good";
 	private static final String characterName = "Rieekan";
 
 	/**
@@ -50,16 +49,16 @@ public class CharacterTest {
 
 	@Test
 	public void testCharacterHasAName() {
-		Character character = new Character(characterName, characterAlignment);
+		Character character = new Character(characterName, "Good");
 		
 		assertEquals(character.getName(), characterName);
 	}
 	
 	@Test
 	public void testCharacterCanHaveAGoodAlignment() {
-		Character character = new Character(characterName, characterAlignment);
+		Character character = new Character(characterName, "Good");
 		
-		assertEquals(character.getAlignment(), characterAlignment);
+		assertEquals(character.getAlignment(), "Good");
 	}
 
 }

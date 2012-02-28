@@ -10,11 +10,9 @@ package com.walterg2.evercraft.domain.characters;
 public class Character {
 	
 	private String name;
-	private String alignment;
 	
-	public Character(String name, String alignment) {
+	public Character(String name) {
 		this.name = name;
-		this.alignment = alignment;
 	}
 
 	/**
@@ -22,13 +20,6 @@ public class Character {
 	 */
 	public String getName() {
 		return name;
-	}
-
-	/**
-	 * @return the alignment
-	 */
-	public String getAlignment() {
-		return alignment;
 	}
 
 }
