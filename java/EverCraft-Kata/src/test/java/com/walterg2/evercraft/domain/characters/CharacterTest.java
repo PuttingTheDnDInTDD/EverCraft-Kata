@@ -117,4 +117,13 @@ public class CharacterTest {
 		assertEquals(defender.getHitPoints(), (defenderStartingHitPoints - 2));
 	}
 
+	@Test
+	public void testDefendingCharacterIsDead() {
+		character.attack(defender, 20);
+		character.attack(defender, 20);
+		character.attack(defender, 20);
+		
+		assertTrue(defender.isDead());
+	}
+
 }
