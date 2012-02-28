@@ -75,5 +75,10 @@ public class CharacterTest {
 		
 		assertEquals(character.getAlignment(), characterAlignmentEvil);
 	}
+	
+	@Test
+	public void testCharacterHasABaseArmorClassOf10() {
+		assertEquals(character.getArmorClass(), 10);
+	}
 
 }
