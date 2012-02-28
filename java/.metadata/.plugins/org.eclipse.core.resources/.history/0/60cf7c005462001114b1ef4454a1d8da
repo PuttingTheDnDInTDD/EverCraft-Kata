@@ -17,10 +17,8 @@ import org.junit.Test;
  */
 public class CharacterTest {
 
+	private static final String characterAlignment = "Good";
 	private static final String characterName = "Rieekan";
-	private static final String characterAlignmentGood = "Good";
-	private static final String characterAlignmentNeutral = "Neutral";
-	private static final String characterAlignmentEvil = "Evil";
 
 	/**
 	 * @throws java.lang.Exception
@@ -52,30 +50,16 @@ public class CharacterTest {
 
 	@Test
 	public void testCharacterHasAName() {
-		Character character = new Character(characterName, characterAlignmentGood);
+		Character character = new Character(characterName, characterAlignment);
 		
 		assertEquals(character.getName(), characterName);
 	}
 	
 	@Test
 	public void testCharacterCanHaveAGoodAlignment() {
-		Character character = new Character(characterName, characterAlignmentGood);
+		Character character = new Character(characterName, characterAlignment);
 		
-		assertEquals(character.getAlignment(), characterAlignmentGood);
-	}
-
-	@Test
-	public void testCharacterCanHaveANeutralAlignment() {
-		Character character = new Character(characterName, characterAlignmentNeutral);
-		
-		assertEquals(character.getAlignment(), characterAlignmentNeutral);
-	}
-
-	@Test
-	public void testCharacterCanHaveAnEvilAlignment() {
-		Character character = new Character(characterName, characterAlignmentEvil);
-		
-		assertEquals(character.getAlignment(), characterAlignmentEvil);
+		assertEquals(character.getAlignment(), characterAlignment);
 	}
 
 }

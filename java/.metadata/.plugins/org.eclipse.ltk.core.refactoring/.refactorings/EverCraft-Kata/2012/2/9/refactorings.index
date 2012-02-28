@@ -1,2 +1,3 @@
 1330464064578	Extract constant 'characterName'
 1330464691992	Extract constant 'characterAlignment'
+1330464840563	Rename field 'characterAlignment'
