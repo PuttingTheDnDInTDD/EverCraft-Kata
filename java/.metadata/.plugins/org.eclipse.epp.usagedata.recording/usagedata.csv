@@ -137,3 +137,28 @@ java.vendor,sysinfo,,,"Apple Inc.",1330463783115
 java.version,sysinfo,,,"1.6.0_29",1330463783115
 java.vm.info,sysinfo,,,"mixed mode",1330463783115
 java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1330463783115
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1330463783115
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1330463783115
+java.vm.specification.version,sysinfo,,,"1.0",1330463783115
+java.vm.vendor,sysinfo,,,"Apple Inc.",1330463783115
+java.vm.version,sysinfo,,,"20.4-b02-402",1330463783115
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1330463792204
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1330463836422
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1330463840448
+started,bundle,org.eclipse.debug.core,3.7.0.v20110518,"org.eclipse.debug.core",1330463843687
+started,bundle,org.eclipse.jdt.launching,3.6.1.v20110803_r371,"org.eclipse.jdt.launching",1330463843688
+started,bundle,org.eclipse.jdt.launching.macosx,3.2.100.v20110509,"org.eclipse.jdt.launching.macosx",1330463843695
+error,log,,,"Exception occurred parsing property list",1330463844908
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.200.v201103170302,"org.eclipse.jst.common.project.facet.core",1330463872768
+started,bundle,org.eclipse.jst.ws.jaxrs.core,1.0.301.v201108240656,"org.eclipse.jst.ws.jaxrs.core",1330463872772
+started,bundle,org.eclipse.jst.servlet.ui,1.1.501.v201108220630,"org.eclipse.jst.servlet.ui",1330463873190
+started,bundle,org.eclipse.wst.common.core,1.2.0.v200908252030,"org.eclipse.wst.common.core",1330463873361
+started,bundle,org.eclipse.wst.common.modulecore,1.2.101.v201108231700,"org.eclipse.wst.common.modulecore",1330463873367
+started,bundle,org.eclipse.jst.j2ee.core,1.2.101.v201108110300,"org.eclipse.jst.j2ee.core",1330463873371
+started,bundle,org.eclipse.jem,2.0.500.v201104271400,"org.eclipse.jem",1330463873385
+started,bundle,org.eclipse.wst.common.frameworks.ui,1.2.100.v201105122000,"org.eclipse.wst.common.frameworks.ui",1330463873417
+started,bundle,org.eclipse.wst.xml.core,1.1.601.v201108302147,"org.eclipse.wst.xml.core",1330463873424
+started,bundle,org.eclipse.wst.validation,1.2.302.v201107140600,"org.eclipse.wst.validation",1330463873441
+started,bundle,org.eclipse.jst.j2ee,1.1.501.v201108231845,"org.eclipse.jst.j2ee",1330463873536
+started,bundle,org.eclipse.jst.jee.ui,1.0.400.v201105122000,"org.eclipse.jst.jee.ui",1330463873537
+started,bundle,org.eclipse.jst.j2ee.ui,1.1.501.v201108231700,"org.eclipse.jst.j2ee.ui",1330463873584
