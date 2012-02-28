@@ -12,6 +12,7 @@ public class Character {
 	private String name;
 	private String alignment;
 	private int armorClass = 10;
+	private int hitPoints = 5;
 	
 	public Character(String name, String alignment) {
 		this.name = name;
@@ -37,6 +38,13 @@ public class Character {
 	 */
 	public int getArmorClass() {
 		return armorClass;
+	}
+
+	/**
+	 * @return the hitPoints
+	 */
+	public int getHitPoints() {
+		return hitPoints;
 	}
 
 }
