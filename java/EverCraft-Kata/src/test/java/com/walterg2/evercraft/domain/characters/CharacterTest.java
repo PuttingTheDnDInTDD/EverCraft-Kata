@@ -85,5 +85,12 @@ public class CharacterTest {
 	public void testCharacterHasInitialHitPointsOf5() {
 		assertEquals(character.getHitPoints(), 5);
 	}
+	
+	@Test
+	public void testCharacterCanAttackAnother() {
+		Character defender = new Character("Bob", "Good");
+		
+		assertTrue(character.attack(defender, 10));
+	}
 
 }

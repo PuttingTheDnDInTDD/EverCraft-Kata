@@ -2,7 +2,7 @@
 /build
 /dist
 /junit-results
-/bin
+*/bin
 /.metadata
 
 

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="CharacterTest" project="EverCraft-Kata" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.walterg2.evercraft.domain.characters.CharacterTest" time="0.0">
-    <testcase name="testCharacterHasAName" classname="com.walterg2.evercraft.domain.characters.CharacterTest" time="0.0"/>
-  </testsuite>
-</testrun>
