@@ -2,6 +2,9 @@
 /build
 /dist
 /junit-results
+/bin
+/.metadata
+
 
 ## System Generated Files
 .DS_Store
