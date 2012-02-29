@@ -50,4 +50,12 @@ public class CharacterAbilityTest {
 		assertEquals(new CharacterAbility().getScore(), 10);
 	}
 
+	@Test
+	public void testCanReturnInitializedScores() {
+		assertEquals(new CharacterAbility(12).getScore(), 12);
+		assertEquals(new CharacterAbility(2).getScore(), 2);
+		assertEquals(new CharacterAbility(20).getScore(), 20);
+		assertEquals(new CharacterAbility(7).getScore(), 7);
+	}
+
 }
