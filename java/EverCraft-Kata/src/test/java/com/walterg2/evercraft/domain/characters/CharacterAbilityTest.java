@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.walterg2.evercraft.domain.characters.CharacterAbility.Abilities;
+
 /**
  * @author walterg2
  *
@@ -52,10 +54,10 @@ public class CharacterAbilityTest {
 
 	@Test
 	public void testCanReturnInitializedScores() {
-		assertEquals(new CharacterAbility(12).getScore(), 12);
-		assertEquals(new CharacterAbility(2).getScore(), 2);
-		assertEquals(new CharacterAbility(20).getScore(), 20);
-		assertEquals(new CharacterAbility(7).getScore(), 7);
+		assertEquals(new CharacterAbility(Abilities.STRENGTH, 12).getScore(), 12);
+		assertEquals(new CharacterAbility(Abilities.STRENGTH, 2).getScore(), 2);
+		assertEquals(new CharacterAbility(Abilities.STRENGTH, 20).getScore(), 20);
+		assertEquals(new CharacterAbility(Abilities.STRENGTH, 7).getScore(), 7);
 	}
 
 }

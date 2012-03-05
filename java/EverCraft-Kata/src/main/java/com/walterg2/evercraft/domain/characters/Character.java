@@ -3,6 +3,8 @@
  */
 package com.walterg2.evercraft.domain.characters;
 
+import com.walterg2.evercraft.domain.characters.CharacterAbility.Abilities;
+
 /**
  * @author walterg2
  *
@@ -15,7 +17,7 @@ public class Character {
 	private Alignment alignment;
 	private int armorClass = 10;
 	private int hitPoints = 5;
-	private CharacterAbility strength = new CharacterAbility(10);
+	private CharacterAbility strength = new CharacterAbility(Abilities.STRENGTH, 10);
 	
 	public Character(String name, Alignment alignment) {
 		this.name = name;
