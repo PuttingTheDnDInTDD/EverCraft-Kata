@@ -58,15 +58,13 @@ As a character I want to have several abilities so that I am not identical to ot
 - Abilities range from 1 to 20 and default to 10
 - Abilities have modifiers according to the following table
 
-<pre>
-         +------+------+------+------+------+------+------+------+------+------+
-Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  
-Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |  
-         +------+------+------+------+------+------+------+------+------+------+
-Score    |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
-Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
-         +------+------+------+------+------+------+------+------+------+------+
-</pre>
+| Score | Modifier | Score | Modifier | Score | Modifier | Score | Modifier |
+|:-----:|:--------:|:-----:|:--------:|:-----:|:--------:|:-----:|:--------:|
+|   1   |    -5    |   6   |    -2    |  11   |     0    |  16   |    +3    |
+|   2   |    -4    |   7   |    -2    |  12   |    +1    |  17   |    +3    |
+|   3   |    -4    |   8   |    -1    |  13   |    +1    |  18   |    +4    |
+|   4   |    -3    |   9   |    -1    |  14   |    +2    |  19   |    +4    |
+|   5   |    -3    |  10   |     0    |  15   |    +2    |  20   |    +5    |
 
 ### Feature: Character Ability Modifiers Modify Attributes
 
