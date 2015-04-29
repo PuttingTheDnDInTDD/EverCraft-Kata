@@ -1,141 +1,516 @@
-<h1 id="theevercraftkata">The EverCraft Kata</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview { font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 1.6; overflow: scroll; box-sizing: border-box; padding: 20px; background-color: rgb(255, 255, 255); }
+.markdown-preview code { color: rgb(51, 51, 51); }
+.markdown-preview code, .markdown-preview tt, .markdown-preview pre.editor-colors { font-size: 12px; font-family: Consolas, 'Liberation Mono', Courier, monospace; }
+.markdown-preview a, .markdown-preview a code { color: rgb(65, 131, 196); }
+.markdown-preview ol > li { list-style-type: decimal; }
+.markdown-preview ul > li { list-style-type: disc; }
+.markdown-preview li > pre.editor-colors { display: inline-block; vertical-align: top; width: 100%; }
+.markdown-preview li:last-child > pre.editor-colors { margin-bottom: 0px; }
+.markdown-preview > :first-child { margin-top: 0px !important; }
+.markdown-preview > :last-child { margin-bottom: 0px !important; }
+.markdown-preview a.absent { color: rgb(204, 0, 0); }
+.markdown-preview a.anchor { display: block; padding-left: 30px; margin-left: -30px; cursor: pointer; position: absolute; top: 0px; left: 0px; bottom: 0px; }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-family: 'Helvetica Neue', Helvetica, sans-serif; margin: 20px 0px 10px; padding: 0px 0px 10px; font-weight: bold; -webkit-font-smoothing: antialiased; cursor: text; position: relative; }
+.markdown-preview h1 .octicon-link, .markdown-preview h2 .octicon-link, .markdown-preview h3 .octicon-link, .markdown-preview h4 .octicon-link, .markdown-preview h5 .octicon-link, .markdown-preview h6 .octicon-link { display: none; color: rgb(0, 0, 0); }
+.markdown-preview h1:hover a.anchor, .markdown-preview h2:hover a.anchor, .markdown-preview h3:hover a.anchor, .markdown-preview h4:hover a.anchor, .markdown-preview h5:hover a.anchor, .markdown-preview h6:hover a.anchor { text-decoration: none; line-height: 1; padding-left: 0px; margin-left: -22px; top: 15%; }
+.markdown-preview h1:hover a.anchor .octicon-link, .markdown-preview h2:hover a.anchor .octicon-link, .markdown-preview h3:hover a.anchor .octicon-link, .markdown-preview h4:hover a.anchor .octicon-link, .markdown-preview h5:hover a.anchor .octicon-link, .markdown-preview h6:hover a.anchor .octicon-link { display: inline-block; }
+.markdown-preview h1 tt, .markdown-preview h2 tt, .markdown-preview h3 tt, .markdown-preview h4 tt, .markdown-preview h5 tt, .markdown-preview h6 tt, .markdown-preview h1 code, .markdown-preview h2 code, .markdown-preview h3 code, .markdown-preview h4 code, .markdown-preview h5 code, .markdown-preview h6 code { font-size: inherit; }
+.markdown-preview h1 { font-size: 28px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); color: rgb(0, 0, 0); }
+.markdown-preview h2 { font-size: 24px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); color: rgb(0, 0, 0); }
+.markdown-preview h3 { font-size: 18px; }
+.markdown-preview h4 { font-size: 16px; }
+.markdown-preview h5 { font-size: 14px; }
+.markdown-preview h6 { color: rgb(119, 119, 119); font-size: 14px; }
+.markdown-preview p, .markdown-preview blockquote, .markdown-preview ul, .markdown-preview ol, .markdown-preview dl, .markdown-preview table, .markdown-preview pre.editor-colors { margin: 15px 0px; }
+.markdown-preview hr { border: 0px none; color: rgb(204, 204, 204); height: 4px; padding: 0px; margin: 15px 0px; background: url('data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC') 0px 0px repeat-x transparent; }
+.markdown-preview > h2:first-child, .markdown-preview > h1:first-child, .markdown-preview > h1:first-child + h2, .markdown-preview > h3:first-child, .markdown-preview > h4:first-child, .markdown-preview > h5:first-child, .markdown-preview > h6:first-child { margin-top: 0px; padding-top: 0px; }
+.markdown-preview a:first-child h1, .markdown-preview a:first-child h2, .markdown-preview a:first-child h3, .markdown-preview a:first-child h4, .markdown-preview a:first-child h5, .markdown-preview a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+.markdown-preview h1 + p, .markdown-preview h2 + p, .markdown-preview h3 + p, .markdown-preview h4 + p, .markdown-preview h5 + p, .markdown-preview h6 + p { margin-top: 0px; }
+.markdown-preview li p.first { display: inline-block; }
+.markdown-preview ul, .markdown-preview ol { padding-left: 30px; }
+.markdown-preview ul.no-list, .markdown-preview ol.no-list { list-style-type: none; padding: 0px; }
+.markdown-preview ul li > :first-child, .markdown-preview ol li > :first-child, .markdown-preview ul li ul:first-of-type, .markdown-preview ol li ul:first-of-type { margin-top: 0px; }
+.markdown-preview ul ul, .markdown-preview ul ol, .markdown-preview ol ol, .markdown-preview ol ul { margin-bottom: 0px; }
+.markdown-preview dl { padding: 0px; }
+.markdown-preview dl dt { font-size: 14px; font-weight: bold; font-style: italic; padding: 0px; margin: 15px 0px 5px; }
+.markdown-preview dl dt:first-child { padding: 0px; }
+.markdown-preview dl dt > :first-child { margin-top: 0px; }
+.markdown-preview dl dt > :last-child { margin-bottom: 0px; }
+.markdown-preview dl dd { margin: 0px 0px 15px; padding: 0px 15px; }
+.markdown-preview dl dd > :first-child { margin-top: 0px; }
+.markdown-preview dl dd > :last-child { margin-bottom: 0px; }
+.markdown-preview blockquote { border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); padding: 0px 15px; color: rgb(119, 119, 119); }
+.markdown-preview blockquote > :first-child { margin-top: 0px; }
+.markdown-preview blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview blockquote p { font-size: 16px; line-height: 1.5; }
+.markdown-preview table th { font-weight: bold; }
+.markdown-preview table th, .markdown-preview table td { border: 1px solid rgb(204, 204, 204); padding: 6px 13px; }
+.markdown-preview table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview img { max-width: 100%; }
+.markdown-preview span.frame { display: block; overflow: hidden; }
+.markdown-preview span.frame > span { border: 1px solid rgb(221, 221, 221); display: block; float: left; overflow: hidden; margin: 13px 0px 0px; padding: 7px; width: auto; }
+.markdown-preview span.frame span img { display: block; float: left; }
+.markdown-preview span.frame span span { clear: both; color: rgb(51, 51, 51); display: block; padding: 5px 0px 0px; }
+.markdown-preview span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-center > span { display: block; overflow: hidden; margin: 13px auto 0px; text-align: center; }
+.markdown-preview span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-right > span { display: block; overflow: hidden; margin: 13px 0px 0px; text-align: right; }
+.markdown-preview span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview span.float-left { display: block; margin-right: 13px; overflow: hidden; float: left; }
+.markdown-preview span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview span.float-right { display: block; margin-left: 13px; overflow: hidden; float: right; }
+.markdown-preview span.float-right > span { display: block; overflow: hidden; margin: 13px auto 0px; text-align: right; }
+.markdown-preview code, .markdown-preview tt { margin: 0px 2px; padding: 0px 5px; border: 1px solid rgb(234, 234, 234); border-radius: 3px; text-shadow: none; background-color: rgb(248, 248, 248); }
+.markdown-preview pre.editor-colors { font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; border: 1px solid rgb(18, 20, 23); background: rgb(41, 44, 51); }
+.markdown-preview kbd { border-radius: 2px; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(204, 204, 204) rgb(204, 204, 204) rgb(221, 221, 221); padding: 1px 4px; line-height: 10px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-image: linear-gradient(rgb(241, 241, 241), rgb(221, 221, 221)); background-color: rgb(221, 221, 221); background-repeat: repeat-x; }
+.markdown-preview .emoji { height: 20px; width: 20px; }
+.markdown-preview { font-size: 1.25em; color: rgb(201, 205, 212); background-color: rgb(48, 52, 60); }
+.markdown-preview h1, .markdown-preview h2 { color: inherit; border-color: rgb(29, 31, 36); }
+.markdown-preview a { color: rgb(100, 148, 237); }
+.markdown-preview hr { background-color: rgb(48, 52, 60); }
+.markdown-preview blockquote { color: rgb(159, 165, 178); border-left-color: rgba(159, 165, 178, 0.6); }
+.markdown-preview table th, .markdown-preview table td { border-color: rgb(29, 31, 36); }
+.markdown-preview table th { background-color: rgb(54, 59, 68); }
+.markdown-preview table tr { background-color: rgb(48, 52, 60); }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(41, 44, 51); }
+.markdown-preview code { color: rgb(244, 244, 246); border-color: rgb(29, 31, 36); background-color: rgb(63, 69, 79); background-clip: padding-box; }
+.markdown-preview pre.editor-colors::shadow .line.cursor-line { background-color: transparent; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
 
-<p>In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast. Just
+.spell-check-misspelling .region {
+  border-bottom: 1px dashed rgba(250, 128, 114, 0.5);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #292c33;
+  color: #95a2bb;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #95a2bb;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #3d7af5;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3f454f;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #3d7af5;
+  box-sizing: border-box;
+  background-color: #363b44;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(149, 162, 187, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(149, 162, 187, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(149, 162, 187, 0.15);
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #5a5b5e;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.git-line-removed:before,
+.host .gutter .line-number.git-line-removed:before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter .line-number.git-line-removed:after,
+.host .gutter .line-number.git-line-removed:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #95a2bb;
+  background-color: #2d3139;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #95a2bb;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #95a2bb;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #95a2bb;
+}
+.comment {
+  color: #5f6b85;
+  font-style: italic;
+}
+.entity.name.type {
+  color: #d9bd86;
+}
+.entity.other.inherited-class {
+  color: #88b379;
+}
+.keyword {
+  color: #b27ecd;
+}
+.keyword.control {
+  color: #b27ecd;
+}
+.keyword.operator {
+  color: #95a2bb;
+}
+.keyword.other.special-method {
+  color: #66a5df;
+}
+.keyword.other.unit {
+  color: #d49a67;
+}
+.storage {
+  color: #b27ecd;
+}
+.constant {
+  color: #d49a67;
+}
+.constant.character.escape {
+  color: #59b3c5;
+}
+.constant.numeric {
+  color: #d49a67;
+}
+.constant.other.color {
+  color: #59b3c5;
+}
+.constant.other.symbol {
+  color: #59b3c5;
+}
+.variable {
+  color: #bf6e7c;
+}
+.variable.interpolation {
+  color: #8f5355;
+}
+.variable.parameter.function {
+  color: #95a2bb;
+}
+.invalid.illegal {
+  background-color: #bf6e7c;
+  color: #292c33;
+}
+.string {
+  color: #88b379;
+}
+.string.regexp {
+  color: #59b3c5;
+}
+.string.regexp .source.ruby.embedded {
+  color: #f18217;
+}
+.string.other.link {
+  color: #bf6e7c;
+}
+.punctuation.definition.comment {
+  color: #5f6b85;
+}
+.punctuation.definition.parameters,
+.punctuation.definition.array {
+  color: #95a2bb;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #66a5df;
+}
+.punctuation.definition.bold {
+  color: #d9bd86;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #b27ecd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #8f5355;
+}
+.support.class {
+  color: #d9bd86;
+}
+.support.function {
+  color: #59b3c5;
+}
+.support.function.any-method {
+  color: #66a5df;
+}
+.entity.name.function {
+  color: #66a5df;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #d9bd86;
+}
+.entity.name.section {
+  color: #66a5df;
+}
+.entity.name.tag {
+  color: #bf6e7c;
+}
+.entity.other.attribute-name {
+  color: #d49a67;
+}
+.entity.other.attribute-name.id {
+  color: #66a5df;
+}
+.meta.class {
+  color: #d9bd86;
+}
+.meta.link {
+  color: #d49a67;
+}
+.meta.require {
+  color: #66a5df;
+}
+.meta.selector {
+  color: #b27ecd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #95a2bb;
+}
+.meta.tag {
+  color: #95a2bb;
+}
+.none {
+  color: #95a2bb;
+}
+.markup.bold {
+  color: #d49a67;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #b27ecd;
+}
+.markup.deleted {
+  color: #bf6e7c;
+}
+.markup.italic {
+  color: #b27ecd;
+  font-style: italic;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #66a5df;
+}
+.markup.inserted {
+  color: #88b379;
+}
+.markup.list {
+  color: #bf6e7c;
+}
+.markup.quote {
+  color: #d49a67;
+}
+.markup.raw.inline {
+  color: #88b379;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .markup.heading {
+  color: #bf6e7c;
+}
+.source.gfm .markup.link {
+  color: #b27ecd;
+}
+.source.gfm .link .entity {
+  color: #66a5df;
+}
+.ruby.symbol > .punctuation {
+  color: inherit;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="the-evercraft-kata">The EverCraft Kata</h1>
+<p>In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
 follow the requirements below, pairing and test driving your code of course, and have fun.</p>
-
-<p>This document and several sample projects can be found on-line at <a href="https://github.com/walterg2/EverCraft-Kata">https://github.com/walterg2/EverCraft-Kata</a></p>
-
+<p>This document and several sample projects can be found on-line at <a href="https://github.com/walterg2/EverCraft-Kata"><a href="https://github.com/walterg2/EverCraft-Kata">https://github.com/walterg2/EverCraft-Kata</a></a></p>
 <p>May all your rolls be 20s.</p>
-
-<p>Guy Royse <a href="https://twitter.com/#!/guyroyse">(@guyroyse)</a> and George Walters II <a href="https://twitter.com/#!/walterg2">(@walterg2)</a></p>
-
+<p>Guy Royse <a href="https://twitter.com/guyroyse">(@guyroyse)</a> and George Walters II <a href="https://twitter.com/walterg2">(@walterg2)</a></p>
 <h1 id="requirements">Requirements</h1>
-
-<h2 id="iteration1-core">Iteration 1 - Core</h2>
-
+<h2 id="iteration-1-core">Iteration 1 - Core</h2>
 <p>This iteration covers core functionality for leveling, combat, and character attributes.</p>
-
-<h3 id="feature:createacharacter">Feature: Create a Character</h3>
-
+<h3 id="feature-create-a-character">Feature: Create a Character</h3>
 <p>As a character I want to have a name so that I can be distinguished from other characters</p>
-
 <ul>
 <li>can get and set Name</li>
 </ul>
-
-<h3 id="feature:alignment">Feature: Alignment</h3>
-
+<h3 id="feature-alignment">Feature: Alignment</h3>
 <p>As a character I want to have an alignment so that I have something to guide my actions</p>
-
 <ul>
 <li>can get and set alignment</li>
 <li>alignments are Good, Evil, and Neutral</li>
 </ul>
-
-<h3 id="feature:armorclasshitpoints">Feature: Armor Class &amp; Hit Points</h3>
-
+<h3 id="feature-armor-class-hit-points">Feature: Armor Class &amp; Hit Points</h3>
 <p>As a combatant I want to have an armor class and hit points so that I can resist attacks from my enemies</p>
-
 <ul>
 <li>has an Armor Class that defaults to 10</li>
 <li>has 5 Hit Points by default</li>
 </ul>
-
-<h3 id="feature:charactercanattack">Feature: Character Can Attack</h3>
-
+<h3 id="feature-character-can-attack">Feature: Character Can Attack</h3>
 <p>As a combatant I want to be able to attack other combatants so that I can survive to fight another day</p>
-
 <ul>
-<li>roll a 20 sided die (don&#8217;t code the die)</li>
+<li>roll a 20 sided die (don&#39;t code the die)</li>
 <li>roll must meet or beat opponents armor class to hit</li>
 </ul>
-
-<h3 id="feature:charactercanbedamaged">Feature: Character Can Be Damaged</h3>
-
+<h3 id="feature-character-can-be-damaged">Feature: Character Can Be Damaged</h3>
 <p>As an attacker I want to be able to damage my enemies so that they will die and I will live</p>
-
 <ul>
 <li>If attack is successful, other character takes 1 point of damage when hit</li>
 <li>If a roll is a natural 20 then a critical hit is dealt and the damage is doubled</li>
 <li>when hit points are 0 or less, the character is dead</li>
 </ul>
-
-<h3 id="feature:characterhasabilitiesscores">Feature: Character Has Abilities Scores</h3>
-
+<h3 id="feature-character-has-abilities-scores">Feature: Character Has Abilities Scores</h3>
 <p>As a character I want to have several abilities so that I am not identical to other characters except in name</p>
-
 <ul>
 <li>Abilities are Strength, Dexterity, Constitution, Wisdom, Intelligence, Charisma</li>
 <li>Abilities range from 1 to 20 and default to 10</li>
 <li>Abilities have modifiers according to the following table</li>
 </ul>
-
-<pre>
-         +------+------+------+------+------+------+------+------+------+------+
-Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  
-Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |  
-         +------+------+------+------+------+------+------+------+------+------+
-Score    |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
-Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
-         +------+------+------+------+------+------+------+------+------+------+
-</pre>
-
-<h3 id="feature:characterabilitymodifiersmodifyattributes">Feature: Character Ability Modifiers Modify Attributes</h3>
-
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Score</th>
+<th style="text-align:center">Modifier</th>
+<th style="text-align:center">Score</th>
+<th style="text-align:center">Modifier</th>
+<th style="text-align:center">Score</th>
+<th style="text-align:center">Modifier</th>
+<th style="text-align:center">Score</th>
+<th style="text-align:center">Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">+3</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">-4</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">+1</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">+3</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">-4</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">+1</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">+4</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">-1</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">+2</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">+4</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">+2</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">+5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="feature-character-ability-modifiers-modify-attributes">Feature: Character Ability Modifiers Modify Attributes</h3>
 <p>As a character I want to apply my ability modifiers improve my capabilities in combat so that I can vanquish my enemy with extreme prejudice</p>
-
 <ul>
-<li>add Strength modifier to:
-
-<ul>
+<li>add Strength modifier to:<ul>
 <li>attack roll and damage dealt</li>
 <li>double Strength modifier on critical hits</li>
 <li>minimum damage is always 1 (even on a critical hit)</li>
-</ul></li>
+</ul>
+</li>
 <li>add Dexterity modifier to armor class</li>
 <li>add Constitution modifier to hit points (always at least 1 hit point)</li>
 </ul>
-
-<h3 id="feature:acharactercangainexperiencewhenattacking">Feature: A Character can gain experience when attacking</h3>
-
+<h3 id="feature-a-character-can-gain-experience-when-attacking">Feature: A Character can gain experience when attacking</h3>
 <p>As a character I want to accumulate experience points when I attack my enemies so that I can earn bragging rights at the tavern</p>
-
 <ul>
 <li>When a successful attack occurs, the character gains 10 experience points</li>
 </ul>
-
-<h3 id="feature:acharactercanlevel">Feature: A Character Can Level</h3>
-
+<h3 id="feature-a-character-can-level">Feature: A Character Can Level</h3>
 <p>As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes</p>
-
 <ul>
 <li>Level defaults to 1</li>
-<li>After 1000 experience points, the character gains a level
-
-<ul>
+<li>After 1000 experience points, the character gains a level<ul>
 <li>0 xp -&gt; 1st Level</li>
 <li>1000 xp -&gt; 2nd Level</li>
 <li>2000 xp -&gt; 3rd Level</li>
 <li>etc.</li>
-</ul></li>
-<li>For each level:
-
-<ul>
+</ul>
+</li>
+<li>For each level:<ul>
 <li>hit points increase by 5 plus Con modifier</li>
 <li>1 is added to attack roll for every even level achieved</li>
-</ul></li>
 </ul>
-
-<h2 id="iteration2-classes">Iteration 2 - Classes</h2>
-
+</li>
+</ul>
+<h2 id="iteration-2-classes">Iteration 2 - Classes</h2>
 <p>Classes that a character can have.</p>
-
-<h3 id="feature:charactershaveclasses">Feature: Characters Have Classes</h3>
-
+<h3 id="feature-characters-have-classes">Feature: Characters Have Classes</h3>
 <p>As a player I want a character to have a class that customizes its capabilities so that I can play more interesting characters</p>
-
 <h4 id="ideas">Ideas</h4>
-
 <ul>
 <li>changes in hit points</li>
 <li>changes in attack and damage</li>
@@ -143,229 +518,162 @@ Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
 <li>bonuses/penalties versus other classes</li>
 <li>special abilities</li>
 </ul>
-
 <h4 id="samples">Samples</h4>
-
 <p>As a player I want to play a fighter so that I can kick ass and take names</p>
-
 <ul>
 <li>attacks roll is increased by 1 for every level instead of every other level</li>
 <li>has 10 hit points per level instead of 5</li>
 </ul>
-
 <p>As a player I want to play a rogue so that I can defeat my enemies with finesse</p>
-
 <ul>
 <li>does triple damage on critical hits</li>
 <li>ignores an opponents Dexterity modifier (if positive) to Armor Class when attacking</li>
 <li>adds Dexterity modifier to attacks instead of Strength</li>
 </ul>
-
 <p>As a player I want to play a war monk so that I can enjoy being an Asian archetype in a Medieval European setting</p>
-
 <ul>
 <li>has 6 hit point per level instead of 5</li>
 <li>does 3 points of damage instead of 1 when successfully attacking</li>
 <li>adds Wisdom modifier (if positive) to Armor Class in addition to Dexterity</li>
 <li>attack roll is increased by 1 every 2nd and 3rd level</li>
 </ul>
-
 <p>As a player I want to play a paladin so that I can smite evil, write wrongs, and be a self-righteous jerk</p>
-
 <ul>
 <li>has 8 hit points per level instead of 5</li>
 <li>+2 to attack and damage when attacking evil characters</li>
-<li>does triple damage when attacking an evil character</li>
+<li>does triple damage when critting on an evil character (i.e. add the +2 bonus for a regular attack, and then triple that)</li>
 <li>attacks roll is increased by 1 for every level instead of every other level</li>
 </ul>
-
-<h2 id="iteration3-races">Iteration 3 - Races</h2>
-
+<h2 id="iteration-3-races">Iteration 3 - Races</h2>
 <p>Races that a character can be.</p>
-
-<h3 id="feature:charactershaveraces">Feature: Characters Have Races</h3>
-
+<h3 id="feature-characters-have-races">Feature: Characters Have Races</h3>
 <p>As a player I want to play a Human so that I can be boring and unoriginal</p>
-
 <ul>
 <li>all characters default to Human</li>
 </ul>
-
 <p>As a player I want a character to have races other than Human that customize its capabilities so that I can
 play more interesting characters and wont be boring and unoriginal</p>
-
 <h4 id="ideas">Ideas</h4>
-
 <ul>
 <li>changes in abilities</li>
 <li>increased critical range or damage</li>
 <li>bonuses/penalties versus other races</li>
 <li>special abilities</li>
 </ul>
-
 <h4 id="samples">Samples</h4>
-
 <p>As a player I want to play an Orc so that I can be crude, drunk, and stupid</p>
-
 <ul>
-<li>+2 to Strength Modifier, &#8211;1 to Intelligence, Wisdom, and Charisma Modifiers</li>
+<li>+2 to Strength Modifier, -1 to Intelligence, Wisdom, and Charisma Modifiers</li>
 <li>+2 to Armor Class due to thick hide</li>
 </ul>
-
 <p>As a player I want to play a Dwarf so that I can drink more than the orc</p>
-
 <ul>
-<li>+1 to Constitution Modifier, &#8211;1 to Charisma Modifier</li>
+<li>+1 to Constitution Modifier, -1 to Charisma Modifier</li>
 <li>doubles Constitution Modifier when adding to hit points per level (if positive)</li>
-<li>+2 when attacking orcs (Dwarves hate Orcs)</li>
+<li>+2 bonus to attack/damage when attacking orcs (Dwarves hate Orcs)</li>
 </ul>
-
 <p>As a player I want to play an Elf so that I can drink wine and snub my nose at the crude dwarf and orc</p>
-
 <ul>
-<li>+1 to Dexterity Modifier, &#8211;1 to Constitution Modifier</li>
-<li>does adds 1 to critical range for critical hits (20 -&gt; 19&#8211;20, 19&#8211;20 -&gt; 18&#8211;20)</li>
+<li>+1 to Dexterity Modifier, -1 to Constitution Modifier</li>
+<li>does adds 1 to critical range for critical hits (20 -&gt; 19-20, 19-20 -&gt; 18-20)</li>
 <li>+2 to Armor Class when being attacked by orcs</li>
 </ul>
-
 <p>As a player I want to play a Halfling so that I can steal from the other drunk characters</p>
-
 <ul>
-<li>+1 to Dexterity Modifier, &#8211;1 to Strength Modifier</li>
+<li>+1 to Dexterity Modifier, -1 to Strength Modifier</li>
 <li>+2 to Armor Class when being attacked by non Halfling (they are small and hard to hit)</li>
 </ul>
-
-<h2 id="iteration4-weaponsarmoritems">Iteration 4 - Weapons, Armor &amp; Items</h2>
-
+<h2 id="iteration-4-weapons-armor-items">Iteration 4 - Weapons, Armor &amp; Items</h2>
 <p>Items that enhance a characters capabilities.</p>
-
-<h3 id="feature:weapons">Feature: Weapons</h3>
-
+<h3 id="feature-weapons">Feature: Weapons</h3>
 <p>As a character I want to be able to wield a single weapon so that I can achieve victory through superior firepower</p>
-
 <ul>
 <li>character can wield only one weapon</li>
 </ul>
-
 <h4 id="ideas">Ideas</h4>
-
 <ul>
 <li>basic weapons that improve damage (dagger)</li>
 <li>basic weapons that improve to attacks (+1 sword)</li>
 <li>magic weapons with special properties (knife of ogre slaying)</li>
 <li>weapons that certain classes or races can or cannot wield</li>
 </ul>
-
 <h4 id="samples">Samples</h4>
-
 <p>As a character I want to be able to wield a longsword so that I can look cool</p>
-
 <ul>
 <li>does 5 points of damage</li>
 </ul>
-
 <p>As a character I want to be able to wield a +2 waraxe that so that I can <em>be</em> cool</p>
-
 <ul>
 <li>does 6 points of damage</li>
 <li>+2 to attack</li>
 <li>+2 to damage</li>
 <li>triple damage on a critical (quadruple for a Rogue)</li>
 </ul>
-
 <p>As an elf I want to be able to wield a elven longsword that so I can stick it to that orc with the waraxe</p>
-
 <ul>
 <li>does 5 points of damage</li>
 <li>+1 to attack and damage</li>
 <li>+2 to attack and damage when wielded by an elf <em>or</em> against an orc</li>
 <li>+5 to attack and damage when wielded by an elf <em>and</em> against orc</li>
 </ul>
-
 <p>As a monk I want nun chucks that work with my martial arts so that I can kick ass like Chuck Norris</p>
-
 <ul>
 <li>does 6 points of damage</li>
-<li>when used by a non-monk there is a &#8211;4 penalty to attack</li>
+<li>when used by a non-monk there is a -4 penalty to attack</li>
 </ul>
-
-<h3 id="feature:armor">Feature: Armor</h3>
-
+<h3 id="feature-armor">Feature: Armor</h3>
 <p>As a character I want to be able to don armor and shield so that I can protect myself from attack</p>
-
 <ul>
 <li>character can only don one shield and wear one suit of armor</li>
 </ul>
-
 <h4 id="ideas">Ideas</h4>
-
 <ul>
 <li>basic armor that improves armor class (plate)</li>
 <li>magic armor that has special properties</li>
 <li>armor and shields that are or are not usable by certain races or classes</li>
 </ul>
-
 <h4 id="samples">Samples</h4>
-
 <p>As a character I want to the be able to wear leather armor so that I can soften attacks against me</p>
-
 <ul>
 <li>+2 to Armor Class</li>
 </ul>
-
 <p>As a fighter I want to be able to wear plate armor so that I can ignore the blows of my enemies</p>
-
 <ul>
 <li>+8 to Armor Class</li>
 <li>can only be worn by fighters, dwarves, of dwarven fighters</li>
 </ul>
-
 <p>As a character I want to the be able to wear magical leather armor of damage reduction so that I can soften attacks against me</p>
-
 <ul>
 <li>+2 to Armor Class</li>
-<li>&#8211;2 to all damage received</li>
+<li>-2 to all damage received</li>
 </ul>
-
 <p>As an elf I want to be able to wear elven chain mail so that I can fit in with all the other elves</p>
-
 <ul>
 <li>+5 to Armor Class</li>
 <li>+8 to Armor Class if worn by an elf</li>
 <li>+1 to attack if worn by an elf</li>
 </ul>
-
-<h3 id="feature:items">Feature: Items</h3>
-
+<h3 id="feature-items">Feature: Items</h3>
 <p>As a character I want to be able to have items that enhance my capabilities so that I can be more bad-ass</p>
-
 <ul>
 <li>can carry multiple items</li>
 </ul>
-
 <h4 id="ideas">Ideas</h4>
-
 <ul>
 <li>items that improve combat with types of weapons</li>
 <li>items that improve stats against certain types of critters</li>
 <li>items that improve abilities</li>
 </ul>
-
 <h4 id="samples">Samples</h4>
-
 <p>As a character I want to be able to wear a ring of protection so that I can be protected from attack</p>
-
 <ul>
 <li>adds +2 to armor class</li>
 </ul>
-
 <p>As a character I want to be able to war a belt of giant strength so that I can be even stronger in combat</p>
-
 <ul>
 <li>add +4 to Strength Score</li>
 </ul>
-
-<h2 id="bonusiteration-battlegrid">Bonus Iteration - Battle Grid</h2>
-
-<p>Build your own features here. Multiple characters can be on a grid-based map. Each square on the map had terrain
-that impacts the occupant or opponents attacking into it. Characters can move and weapons have ranges.</p>
+<h2 id="bonus-iteration-battle-grid">Bonus Iteration - Battle Grid</h2>
+<p>Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
+that impacts the occupant or opponents attacking into it.  Characters can move and weapons have ranges.</p></body>
+</html>
