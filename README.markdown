@@ -79,7 +79,7 @@ As a character I want to apply my ability modifiers improve my capabilities in c
 
 ### Feature: A Character can gain experience when attacking
 
-As a character I want to accumulate experience points when I attack my enemies so that I can earn bragging rights at the tavern
+As a character I want to accumulate experience points (xp) when I attack my enemies so that I can earn bragging rights at the tavern
 
 - When a successful attack occurs, the character gains 10 experience points
 
@@ -112,33 +112,36 @@ As a player I want a character to have a class that customizes its capabilities 
 - increased critical range or damage
 - bonuses/penalties versus other classes
 - special abilities
+- alignment limitations
 
 #### Samples
 
-As a player I want to play a fighter so that I can kick ass and take names
+As a player I want to play a Fighter so that I can kick ass and take names
 
 - attacks roll is increased by 1 for every level instead of every other level
 - has 10 hit points per level instead of 5
 
-As a player I want to play a rogue so that I can defeat my enemies with finesse
+As a player I want to play a Rogue so that I can defeat my enemies with finesse
 
 - does triple damage on critical hits
 - ignores an opponents Dexterity modifier (if positive) to Armor Class when attacking
 - adds Dexterity modifier to attacks instead of Strength
+- cannot have Good alignment
 
-As a player I want to play a war monk so that I can enjoy being an Asian archetype in a Medieval European setting
+As a player I want to play a Monk so that I can enjoy being an Asian martial-arts archetype in a Medieval European setting
 
 - has 6 hit point per level instead of 5
 - does 3 points of damage instead of 1 when successfully attacking
 - adds Wisdom modifier (if positive) to Armor Class in addition to Dexterity
 - attack roll is increased by 1 every 2nd and 3rd level
 
-As a player I want to play a paladin so that I can smite evil, write wrongs, and be a self-righteous jerk
+As a player I want to play a Paladin so that I can smite evil, write wrongs, and be a self-righteous jerk
 
 - has 8 hit points per level instead of 5
 - +2 to attack and damage when attacking evil characters
 - does triple damage when critting on an evil character (i.e. add the +2 bonus for a regular attack, and then triple that)
 - attacks roll is increased by 1 for every level instead of every other level
+- can only have Good alignment
 
 ## Iteration 3 - Races
 
@@ -159,6 +162,7 @@ play more interesting characters and wont be boring and unoriginal
 - increased critical range or damage
 - bonuses/penalties versus other races
 - special abilities
+- alignment limitations
 
 #### Samples
 
@@ -183,6 +187,7 @@ As a player I want to play a Halfling so that I can steal from the other drunk c
 
 - +1 to Dexterity Modifier, -1 to Strength Modifier
 - +2 to Armor Class when being attacked by non Halfling (they are small and hard to hit)
+- cannot have Evil alignment
 
 ## Iteration 4 - Weapons, Armor & Items
 
@@ -244,10 +249,10 @@ As a character I want to the be able to wear leather armor so that I can soften 
 
 - +2 to Armor Class
 
-As a fighter I want to be able to wear plate armor so that I can ignore the blows of my enemies
+As a fighter (or dwarf) I want to be able to wear plate armor so that I can ignore the blows of my enemies
 
 - +8 to Armor Class
-- can only be worn by fighters, dwarves, of dwarven fighters
+- can only be worn by fighters (of any race) and dwarves (of any class)
 
 As a character I want to the be able to wear magical leather armor of damage reduction so that I can soften attacks against me
 
@@ -259,6 +264,12 @@ As an elf I want to be able to wear elven chain mail so that I can fit in with a
 - +5 to Armor Class
 - +8 to Armor Class if worn by an elf
 - +1 to attack if worn by an elf
+
+As a fighter I want to be able to hold a shield in my off-hand so that I can block incoming blows
+
+- +3 to Armor Class
+- -4 to attack
+- -2 to attack if worn by a fighter
 
 ### Feature: Items
 
