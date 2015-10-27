@@ -1,3 +1,38 @@
-*~
+# Java
+*.class
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.eml
+out/
+
+# Eclipse
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
 *.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.classpath
+.project
+RemoteSystemsTempFiles/
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+
+# Gradle
+build/
+.gradle/
+gradle.properties
+
+# Others
+*~
 .DS_Store
