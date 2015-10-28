@@ -299,6 +299,6 @@ that impacts the occupant or opponents attacking into it.  Characters can move a
 
 # Sample Implementations
 
-- [C#](https://github.com/bkimminich/EverCraft-Kata-Solutions/tree/master/c-sharp) and [Groovy](https://github.com/bkimminich/EverCraft-Kata-Solutions/tree/master/groovy) implementations by [walterg2](https://github.com/walterg2)
-- [Java](https://github.com/bkimminich/EverCraft-Kata-Solutions/tree/master/java/tjsnider/evercraft) implementation by [tjsnider](https://github.com/walterg2/tjsnider)
+- [C#](https://github.com/PuttingTheDnDInTDD/EverCraft-Kata-Solutions/tree/master/c-sharp) and [Groovy](https://github.com/PuttingTheDnDInTDD/EverCraft-Kata-Solutions/tree/master/groovy) implementations by [walterg2](https://github.com/walterg2)
+- [Java](https://github.com/PuttingTheDnDInTDD/EverCraft-Kata-Solutions/tree/master/java/tjsnider/evercraft) implementation by [tjsnider](https://github.com/walterg2/tjsnider)
 - [Haskell](https://github.com/coreyhaines/evercraft_kata) implementation by [coreyhaines](https://github.com/coreyhaines) 
