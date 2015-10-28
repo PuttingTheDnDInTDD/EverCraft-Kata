@@ -304,10 +304,11 @@ As a character I want to have a more sophisticated alignment so that I can defin
 - additional Law-vs-Chaos axis alignments are Lawful, Chaotic, and Neutral
 - character can now have one of the nine alignment combinations shown in the following grid
 
-|:----------------:|:------------------:|:-----------------:|
-|   Lawful good    |    Neutral good    |   Chaotic good    |
-|   Lawful neutral |    (True) neutral  |   Chaotic neutral |
-|   Lawful evil    |    Neutral evil    |   Chaotic evil    |
+|             |   Lawful         |    Neutral         |   Chaotic         |
+|:-----------:|:----------------:|:------------------:|:-----------------:|
+|  __Good__   |   Lawful good    |    Neutral good    |   Chaotic good    |
+| __Neutral__ |   Lawful neutral |    (True) neutral  |   Chaotic neutral |
+|  __Evil __  |   Lawful evil    |    Neutral evil    |   Chaotic evil    |
 
 #### Ideas
 - paladins must always be lawful good
