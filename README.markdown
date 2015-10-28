@@ -1,4 +1,4 @@
-# The EverCraft Kata [![Dependency Status](https://www.versioneye.com/user/projects/5630a4a536d0ab0016001a17/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5630a4a536d0ab0016001a17)   
+# The EverCraft Kata   
 
 In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
 follow the requirements below, pairing and test driving your code of course, and have fun.
