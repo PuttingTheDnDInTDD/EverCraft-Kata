@@ -314,7 +314,7 @@ Items that enhance a characters capabilities.
 |:-----------:|:----------------:|:------------------:|:-----------------:|
 |  __Good__   |   Lawful good    |    Neutral good    |   Chaotic good    |
 | __Neutral__ |   Lawful neutral |    (True) neutral  |   Chaotic neutral |
-|  __Evil__  |   Lawful evil    |    Neutral evil    |   Chaotic evil    |
+|   __Evil__  |   Lawful evil    |    Neutral evil    |   Chaotic evil    |
 
 #### Ideas
 - paladins must always be lawful good
