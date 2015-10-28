@@ -313,6 +313,21 @@ As a character I want to have a more sophisticated alignment so that I can defin
 - rogues cannot be lawful
 - monks cannot be chaotic
 
+### Feature: Levelling system improvement
+
+As a monster I want characters to gain higher levels more slowly over time so that they do not become too overpowered
+
+- while still gaining xp (for bragging rights) characters do not progress beyond level 20
+- characters now gain levels when reaching the experience points listed in the following table
+
+|   Level   | Experience |   Level   | Experience |   Level   | Experience |   Level   | Experience |
+|:---------:|:----------:|:---------:|:----------:|:---------:|:----------:|:---------:|:----------:|
+|   __1__   |       0    |   __6__   |   15,000   |  __11__   |  55,000    |  __16__   |  120,000   |
+|   __2__   |   1,000    |   __7__   |   21,000   |  __12__   |  66,000    |  __17__   |  136,000   |
+|   __3__   |   3,000    |   __8__   |   28,000   |  __13__   |  78,000    |  __18__   |  153,000   |
+|   __4__   |   6,000    |   __9__   |   36,000   |  __14__   |  91,000    |  __19__   |  171,000   |
+|   __5__   |  10,000    |  __10__   |   45,000   |  __15__   | 105,000    |  __20__   |  190,000   |
+
 ## Bonus Iteration - Battle Grid
 
 Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
