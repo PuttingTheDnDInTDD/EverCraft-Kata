@@ -281,7 +281,7 @@ Items that enhance a characters capabilities.
 
 #### Ideas
 - items that improve combat with types of weapons
-- items that improve stats against certain types of critters
+- items that improve stats against enemies with a certain alignment or race
 - items that improve abilities
 
 #### Samples
@@ -290,10 +290,16 @@ Items that enhance a characters capabilities.
 
   - adds +2 to armor class
 
-> As a character I want to be able to war a belt of giant strength so that I can be even stronger in combat
+> As a character I want to be able to wear a belt of giant strength so that I can be even stronger in combat
 
   - add +4 to Strength Score
   
+> As a character I want to be able to wear an amulet of the heavens so that I can strike down evil with holy power
+
+  - +1 to attack against neutral enemies
+  - +2 to attack against evil enemies
+  - double above bonuses if worn by a paladin
+
 ## Iteration 5 - Improvements to existing features
  
 ### Feature: Alignment system improvement
