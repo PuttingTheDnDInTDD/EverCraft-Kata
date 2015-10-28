@@ -53,20 +53,20 @@ As an attacker I want to be able to damage my enemies so that they will die and 
 - when hit points are 0 or less, the character is dead
 
 ### Feature: Character Has Abilities Scores
-
+                                                
 As a character I want to have several abilities so that I am not identical to other characters except in name
 
 - Abilities are Strength, Dexterity, Constitution, Wisdom, Intelligence, Charisma
 - Abilities range from 1 to 20 and default to 10
 - Abilities have modifiers according to the following table
 
-| Score | Modifier | Score | Modifier | Score | Modifier | Score | Modifier |
-|:-----:|:--------:|:-----:|:--------:|:-----:|:--------:|:-----:|:--------:|
-|   1   |    -5    |   6   |    -2    |  11   |     0    |  16   |    +3    |
-|   2   |    -4    |   7   |    -2    |  12   |    +1    |  17   |    +3    |
-|   3   |    -4    |   8   |    -1    |  13   |    +1    |  18   |    +4    |
-|   4   |    -3    |   9   |    -1    |  14   |    +2    |  19   |    +4    |
-|   5   |    -3    |  10   |     0    |  15   |    +2    |  20   |    +5    |
+|   Score   | Modifier |   Score   | Modifier |   Score   | Modifier |   Score   | Modifier |
+|:---------:|:--------:|:---------:|:--------:|:---------:|:--------:|:---------:|:--------:|
+|   __1__   |    -5    |   __6__   |    -2    |  __11__   |     0    |  __16__   |    +3    |
+|   __2__   |    -4    |   __7__   |    -2    |  __12__   |    +1    |  __17__   |    +3    |
+|   __3__   |    -4    |   __8__   |    -1    |  __13__   |    +1    |  __18__   |    +4    |
+|   __4__   |    -3    |   __9__   |    -1    |  __14__   |    +2    |  __19__   |    +4    |
+|   __5__   |    -3    |  __10__   |     0    |  __15__   |    +2    |  __20__   |    +5    |
 
 ### Feature: Character Ability Modifiers Modify Attributes
 
