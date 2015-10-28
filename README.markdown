@@ -293,6 +293,25 @@ As a character I want to be able to wear a ring of protection so that I can be p
 As a character I want to be able to war a belt of giant strength so that I can be even stronger in combat
 
   - add +4 to Strength Score
+  
+## Iteration 5 - Improvements to existing features
+ 
+### Feature: Alignment system improvement
+
+As a character I want to have a more sophisticated alignment so that I can define my moral and orientation more specifically
+
+- can get and set different alignment axis in addition to existing Good-vs-Evil axis 
+- additional Law-vs-Chaos axis alignments are Lawful, Chaotic, and Neutral
+- character can now have one of the nine alignment combinations shown in the following grid
+
+|   Lawful good    |    Neutral good    |   Chaotic good    |
+|   Lawful neutral |    (True) neutral  |   Chaotic neutral |
+|   Lawful evil    |    Neutral evil    |   Chaotic evil    |
+
+#### Ideas
+- paladins must always be lawful good
+- rogues cannot be lawful
+- monks cannot be chaotic
 
 ## Bonus Iteration - Battle Grid
 
