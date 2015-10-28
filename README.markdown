@@ -3,7 +3,7 @@
 In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
 follow the requirements below, pairing and test driving your code of course, and have fun.
 
-This document and several sample projects can be found on-line at [https://github.com/walterg2/EverCraft-Kata](https://github.com/walterg2/EverCraft-Kata)
+This document and template projects for several programming languages can be found on-line at [https://github.com/PuttingTheDnDInTDD/EverCraft-Kata](https://github.com/PuttingTheDnDInTDD/EverCraft-Kata).
 
 May all your rolls be 20s.
 
@@ -296,3 +296,9 @@ As a character I want to be able to war a belt of giant strength so that I can b
 
 Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
 that impacts the occupant or opponents attacking into it.  Characters can move and weapons have ranges.
+
+# Sample Implementations
+
+- [C#](https://github.com/bkimminich/EverCraft-Kata-Solutions/tree/master/c-sharp) and [Groovy](https://github.com/bkimminich/EverCraft-Kata-Solutions/tree/master/groovy) implementations by [walterg2](https://github.com/walterg2)
+- [Java](https://github.com/bkimminich/EverCraft-Kata-Solutions/tree/master/java/tjsnider/evercraft) implementation by [tjsnider](https://github.com/walterg2/tjsnider)
+- [Haskell](https://github.com/coreyhaines/evercraft_kata) implementation by [coreyhaines](https://github.com/coreyhaines) 
