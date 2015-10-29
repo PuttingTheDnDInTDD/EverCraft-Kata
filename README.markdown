@@ -300,42 +300,6 @@ Items that enhance a characters capabilities.
   - +2 to attack against evil enemies
   - double above bonuses if worn by a paladin
 
-## Iteration 5 - Improvements to existing features
- 
-### Feature: Alignment system improvement
-
-> As a character I want to have a more sophisticated alignment so that I can define my moral and orientation more specifically
-
-- can get and set different alignment axis in addition to existing Good-vs-Evil axis 
-- additional Law-vs-Chaos axis alignments are Lawful, Chaotic, and Neutral
-- character can now have one of the nine alignment combinations shown in the following grid
-
-|             |   Lawful         |    Neutral         |   Chaotic         |
-|:-----------:|:----------------:|:------------------:|:-----------------:|
-|  __Good__   |   Lawful good    |    Neutral good    |   Chaotic good    |
-| __Neutral__ |   Lawful neutral |    (True) neutral  |   Chaotic neutral |
-|   __Evil__  |   Lawful evil    |    Neutral evil    |   Chaotic evil    |
-
-#### Ideas
-- paladins must always be lawful good
-- rogues cannot be lawful
-- monks cannot be chaotic
-
-### Feature: Levelling system improvement
-
-> As a monster I want characters to gain higher levels more slowly over time so that they do not become too overpowered
-
-- while still gaining xp (for bragging rights) characters do not progress beyond level 20
-- characters now gain levels when reaching the experience points listed in the following table
-
-|   Level   | Experience |   Level   | Experience |   Level   | Experience |   Level   | Experience |
-|:---------:|:----------:|:---------:|:----------:|:---------:|:----------:|:---------:|:----------:|
-|   __1__   |       0    |   __6__   |   15,000   |  __11__   |  55,000    |  __16__   |  120,000   |
-|   __2__   |   1,000    |   __7__   |   21,000   |  __12__   |  66,000    |  __17__   |  136,000   |
-|   __3__   |   3,000    |   __8__   |   28,000   |  __13__   |  78,000    |  __18__   |  153,000   |
-|   __4__   |   6,000    |   __9__   |   36,000   |  __14__   |  91,000    |  __19__   |  171,000   |
-|   __5__   |  10,000    |  __10__   |   45,000   |  __15__   | 105,000    |  __20__   |  190,000   |
-
 ## Bonus Iteration - Battle Grid
 
 Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
