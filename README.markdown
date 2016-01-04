@@ -233,7 +233,7 @@ Items that enhance a characters capabilities.
 - does 6 points of damage
 - when used by a non-monk there is a -4 penalty to attack
 
-###Feature: Armor
+### Feature: Armor
 
 > As a character I want to be able to don armor and shield so that I can protect myself from attack
 
