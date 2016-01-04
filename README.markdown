@@ -53,7 +53,7 @@ This iteration covers core functionality for leveling, combat, and character att
 - when hit points are 0 or less, the character is dead
 
 ### Feature: Character Has Abilities Scores
-                                                
+
 > As a character I want to have several abilities so that I am not identical to other characters except in name
 
 - Abilities are Strength, Dexterity, Constitution, Wisdom, Intelligence, Charisma
@@ -103,7 +103,7 @@ This iteration covers core functionality for leveling, combat, and character att
 
 Classes that a character can have.
 
-###Feature: Characters Have Classes
+### Feature: Characters Have Classes
 
 > As a player I want a character to have a class that customizes its capabilities so that I can play more interesting characters
 
@@ -208,7 +208,7 @@ Items that enhance a characters capabilities.
 - magic weapons with special properties (knife of ogre slaying)
 - weapons that certain classes or races can or cannot wield
 
-####Samples
+#### Samples
 
 > As a character I want to be able to wield a longsword so that I can look cool
 
@@ -293,7 +293,7 @@ Items that enhance a characters capabilities.
 > As a character I want to be able to wear a belt of giant strength so that I can be even stronger in combat
 
   - add +4 to Strength Score
-  
+
 > As a character I want to be able to wear an amulet of the heavens so that I can strike down evil with holy power
 
   - +1 to attack against neutral enemies
