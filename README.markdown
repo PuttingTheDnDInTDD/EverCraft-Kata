@@ -11,40 +11,40 @@ Guy Royse [(@guyroyse)](https://twitter.com/guyroyse) and George Walters II [(@w
 
 ![EverCraft](images/Evercraft.png)
 
-# Requirements
+## Requirements
 
-## Iteration 1 - Core
+### Iteration 1 - Core
 
 This iteration covers core functionality for leveling, combat, and character attributes.
 
-### Feature: Create a Character
+#### Feature: Create a Character
 
 > As a character I want to have a name so that I can be distinguished from other characters
 
 - can get and set Name
 
-### Feature: Alignment
+#### Feature: Alignment
 
 > As a character I want to have an alignment so that I have something to guide my actions
 
 - can get and set alignment
 - alignments are Good, Evil, and Neutral
 
-### Feature: Armor Class & Hit Points
+#### Feature: Armor Class & Hit Points
 
 > As a combatant I want to have an armor class and hit points so that I can resist attacks from my enemies
 
 - has an Armor Class that defaults to 10
 - has 5 Hit Points by default
 
-### Feature: Character Can Attack
+#### Feature: Character Can Attack
 
 > As a combatant I want to be able to attack other combatants so that I can survive to fight another day
 
 - roll a 20 sided die (don't code the die)
 - roll must meet or beat opponents armor class to hit
 
-### Feature: Character Can Be Damaged
+#### Feature: Character Can Be Damaged
 
 > As an attacker I want to be able to damage my enemies so that they will die and I will live
 
@@ -52,7 +52,7 @@ This iteration covers core functionality for leveling, combat, and character att
 - If a roll is a natural 20 then a critical hit is dealt and the damage is doubled
 - when hit points are 0 or less, the character is dead
 
-### Feature: Character Has Abilities Scores
+#### Feature: Character Has Abilities Scores
 
 > As a character I want to have several abilities so that I am not identical to other characters except in name
 
@@ -68,7 +68,7 @@ This iteration covers core functionality for leveling, combat, and character att
 |   __4__   |    -3    |   __9__   |    -1    |  __14__   |    +2    |  __19__   |    +4    |
 |   __5__   |    -3    |  __10__   |     0    |  __15__   |    +2    |  __20__   |    +5    |
 
-### Feature: Character Ability Modifiers Modify Attributes
+#### Feature: Character Ability Modifiers Modify Attributes
 
 > As a character I want to apply my ability modifiers improve my capabilities in combat so that I can vanquish my enemy with extreme prejudice
 
@@ -79,13 +79,13 @@ This iteration covers core functionality for leveling, combat, and character att
 - add Dexterity modifier to armor class
 - add Constitution modifier to hit points (always at least 1 hit point)
 
-### Feature: A Character can gain experience when attacking
+#### Feature: A Character can gain experience when attacking
 
 > As a character I want to accumulate experience points (xp) when I attack my enemies so that I can earn bragging rights at the tavern
 
 - When a successful attack occurs, the character gains 10 experience points
 
-### Feature: A Character Can Level
+#### Feature: A Character Can Level
 
 > As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes
 
@@ -99,15 +99,15 @@ This iteration covers core functionality for leveling, combat, and character att
     - hit points increase by 5 plus Con modifier
     - 1 is added to attack roll for every even level achieved
 
-## Iteration 2 - Classes
+### Iteration 2 - Classes
 
 Classes that a character can have.
 
-### Feature: Characters Have Classes
+#### Feature: Characters Have Classes
 
 > As a player I want a character to have a class that customizes its capabilities so that I can play more interesting characters
 
-#### Ideas
+##### Ideas
 
 - changes in hit points
 - changes in attack and damage
@@ -116,7 +116,7 @@ Classes that a character can have.
 - special abilities
 - alignment limitations
 
-#### Samples
+##### Samples
 
 > As a player I want to play a Fighter so that I can kick ass and take names
 
@@ -145,11 +145,11 @@ Classes that a character can have.
 - attacks roll is increased by 1 for every level instead of every other level
 - can only have Good alignment
 
-## Iteration 3 - Races
+### Iteration 3 - Races
 
 Races that a character can be.
 
-### Feature: Characters Have Races
+#### Feature: Characters Have Races
 
 > As a player I want to play a Human so that I can be boring and unoriginal
 
@@ -158,7 +158,7 @@ Races that a character can be.
 > As a player I want a character to have races other than Human that customize its capabilities so that I can
 play more interesting characters and wont be boring and unoriginal
 
-#### Ideas
+##### Ideas
 
 - changes in abilities
 - increased critical range or damage
@@ -166,7 +166,7 @@ play more interesting characters and wont be boring and unoriginal
 - special abilities
 - alignment limitations
 
-#### Samples
+##### Samples
 
 > As a player I want to play an Orc so that I can be crude, drunk, and stupid
 
@@ -191,24 +191,24 @@ play more interesting characters and wont be boring and unoriginal
 - +2 to Armor Class when being attacked by non Halfling (they are small and hard to hit)
 - cannot have Evil alignment
 
-## Iteration 4 - Weapons, Armor & Items
+### Iteration 4 - Weapons, Armor & Items
 
 Items that enhance a characters capabilities.
 
-### Feature: Weapons
+#### Feature: Weapons
 
 > As a character I want to be able to wield a single weapon so that I can achieve victory through superior firepower
 
 - character can wield only one weapon
 
-#### Ideas
+##### Ideas
 
 - basic weapons that improve damage (dagger)
 - basic weapons that improve to attacks (+1 sword)
 - magic weapons with special properties (knife of ogre slaying)
 - weapons that certain classes or races can or cannot wield
 
-#### Samples
+##### Samples
 
 > As a character I want to be able to wield a longsword so that I can look cool
 
@@ -233,19 +233,19 @@ Items that enhance a characters capabilities.
 - does 6 points of damage
 - when used by a non-monk there is a -4 penalty to attack
 
-### Feature: Armor
+#### Feature: Armor
 
 > As a character I want to be able to don armor and shield so that I can protect myself from attack
 
 - character can only don one shield and wear one suit of armor
 
-#### Ideas
+##### Ideas
 
 - basic armor that improves armor class (plate)
 - magic armor that has special properties
 - armor and shields that are or are not usable by certain races or classes
 
-#### Samples
+##### Samples
 
 > As a character I want to the be able to wear leather armor so that I can soften attacks against me
 
@@ -273,18 +273,18 @@ Items that enhance a characters capabilities.
 - -4 to attack
 - -2 to attack if worn by a fighter
 
-### Feature: Items
+#### Feature: Items
 
 > As a character I want to be able to have items that enhance my capabilities so that I can be more bad-ass
 
 - can carry multiple items
 
-#### Ideas
+##### Ideas
 - items that improve combat with types of weapons
 - items that improve stats against enemies with a certain alignment or race
 - items that improve abilities
 
-#### Samples
+##### Samples
 
 > As a character I want to be able to wear a ring of protection so that I can be protected from attack
 
@@ -300,7 +300,7 @@ Items that enhance a characters capabilities.
   - +2 to attack against evil enemies
   - double above bonuses if worn by a paladin
 
-## Bonus Iteration - Battle Grid
+### Bonus Iteration - Battle Grid
 
 Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
 that impacts the occupant or opponents attacking into it.  Characters can move and weapons have ranges.
