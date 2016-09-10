@@ -140,8 +140,8 @@ Classes that a character can have.
 > As a player I want to play a Paladin so that I can smite evil, write wrongs, and be a self-righteous jerk
 
 - has 8 hit points per level instead of 5
-- +2 to attack and damage when attacking evil characters
-- does triple damage when critting on an evil character (i.e. add the +2 bonus for a regular attack, and then triple that)
+- +2 to attack and damage when attacking Evil characters
+- does triple damage when critting on an Evil character (i.e. add the +2 bonus for a regular attack, and then triple that)
 - attacks roll is increased by 1 for every level instead of every other level
 - can only have Good alignment
 
@@ -296,8 +296,8 @@ Items that enhance a characters capabilities.
 
 > As a character I want to be able to wear an amulet of the heavens so that I can strike down evil with holy power
 
-  - +1 to attack against neutral enemies
-  - +2 to attack against evil enemies
+  - +1 to attack against Neutral enemies
+  - +2 to attack against Evil enemies
   - double above bonuses if worn by a paladin
 
 ### Bonus Iteration - Battle Grid
