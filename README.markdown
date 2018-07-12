@@ -50,7 +50,7 @@ This iteration covers core functionality for leveling, combat, and character att
 
 - If attack is successful, other character takes 1 point of damage when hit
 - If a roll is a natural 20 then a critical hit is dealt and the damage is doubled
-- when hit points are 0 or less, the character is dead
+- when hit points are 0 or fewer, the character is dead
 
 #### Feature: Character Has Abilities Scores
 
