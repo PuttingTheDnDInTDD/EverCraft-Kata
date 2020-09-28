@@ -1,7 +1,6 @@
-# The EverCraft Kata   
+# The EverCraft Kata
 
-In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
-follow the requirements below, pairing and test driving your code of course, and have fun.
+In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast. Just follow the requirements below, pairing and test driving your code of course, and have fun.
 
 This document and template projects for several programming languages can be found on-line at [https://github.com/PuttingTheDnDInTDD/EverCraft-Kata](https://github.com/PuttingTheDnDInTDD/EverCraft-Kata).
 
@@ -155,8 +154,7 @@ Races that a character can be.
 
 - all characters default to Human
 
-> As a player I want a character to have races other than Human that customize its capabilities so that I can
-play more interesting characters and wont be boring and unoriginal
+> As a player I want a character to have races other than Human that customize its capabilities so that I can play more interesting characters and wont be boring and unoriginal
 
 ##### Ideas
 
@@ -280,6 +278,7 @@ Items that enhance a characters capabilities.
 - can carry multiple items
 
 ##### Ideas
+
 - items that improve combat with types of weapons
 - items that improve stats against enemies with a certain alignment or race
 - items that improve abilities
@@ -302,5 +301,4 @@ Items that enhance a characters capabilities.
 
 ### Bonus Iteration - Battle Grid
 
-Build your own features here.  Multiple characters can be on a grid-based map.  Each square on the map had terrain
-that impacts the occupant or opponents attacking into it.  Characters can move and weapons have ranges.
+Build your own features here. Multiple characters can be on a grid-based map. Each square on the map had terrain that impacts the occupant or opponents attacking into it. Characters can move and weapons have ranges.
