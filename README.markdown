@@ -42,6 +42,7 @@ This iteration covers core functionality for leveling, combat, and character att
 
 - roll a 20 sided die (don't code the die)
 - roll must meet or beat opponents armor class to hit
+- a natural roll of 20 always hits
 
 #### Feature: Character Can Be Damaged
 
@@ -301,4 +302,4 @@ Items that enhance a characters capabilities.
 
 ### Bonus Iteration - Battle Grid
 
-Build your own features here. Multiple characters can be on a grid-based map. Each square on the map had terrain that impacts the occupant or opponents attacking into it. Characters can move and weapons have ranges.
+Build your own features here. Multiple characters can be on a grid-based map. Each square on the map has terrain that impacts the occupant or opponents attacking into it. Characters can move and weapons have ranges.
